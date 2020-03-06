@@ -68,5 +68,5 @@ Registered auditing is welcomed
 
 How to transform `slides.html` to PDF format?
 - Add `?print-pdf` at the end of `slides.html` making it `slides.html?print-pdf` and press enter
-- Copy and paste the URL in your Chrome browser
+- Copy and paste the URL to your Chrome browser
 - File > Print... > Save as PDF
