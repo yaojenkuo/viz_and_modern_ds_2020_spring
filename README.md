@@ -30,6 +30,7 @@ Registered auditing is welcomed
 - Schedule: Fridays, 14:20-17:20
 - Pre-requisites: None
 - Location: 管一 405
+- CEIBA: <https://ceiba.ntu.edu.tw/1082viz_with_ds>
 - Forum: [Signup at Piazza](https://piazza.com/ntu.edu.tw/spring2020/ba4009)
 
 ## Grading Policy
