@@ -23,7 +23,7 @@ We will use Python's `random` module to draw if there are more than 5 additional
 Registered auditing is welcomed
 
 - Auditor does not have credits, Tableau License Key, homeworks, nor exams
-- If there are more than 15 auditors, we will adapt the same policy as additional registration
+- If there are more than 15 auditors, we will adopt the same policy as additional registration
 
 ## Logistics
 
