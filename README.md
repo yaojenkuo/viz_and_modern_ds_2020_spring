@@ -21,7 +21,7 @@ Due to resourse constraint and limited experience, we accept 5 additional regist
 
 We will use Python's `random` module to draw if there are more than 5 additional registrations within higher priorities.
 
-Auditing is welcomed, however there will be no credits, Tableau product key, homeworks, nor exams. We encourage auditing via course [YouTube Playlist](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWTH1ffGy0jmoLnYhE8neJi)
+Auditing is welcomed, however there will be no credits, Tableau product key, homeworks, nor exams. We encourage auditing via our course [YouTube Playlist](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWTH1ffGy0jmoLnYhE8neJi)
 
 ## Logistics
 
