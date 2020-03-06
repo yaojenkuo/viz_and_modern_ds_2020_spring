@@ -2,10 +2,11 @@
 
 ## General Information
 
+- Pre-requisites: None
 - Institute: National Taiwan University
 - Department: Business Administration
 - Semester: 2020 Spring
-- Instructor: Kuo, Yao-Jen <yaojenkuo@ntu.edu.tw>
+- Instructor: Kuo, Yao-Jen
 
 畢業自台灣大學商學研究所，於台大資工系統訓練班、資策會、中華電信學院及多所大專院校講授資料科學課程。在專業講師之前任職過上海的韓商新創公司、台北的美商軟體公司、銀行與美商顧問公司，閒暇時喜歡長跑與乒乓球，寫作[部落格](https://medium.com/datainpoint)，著有 [Hahow 好學校線上課程：如何成為資料分析師](https://hahow.in/cr/dajourney)、[輕鬆學習 R 語言](https://www.datainpoint.com/r-essentials/)、[R 語言使用者的 Python 學習筆記](http://ithelp.ithome.com.tw/users/20103511/ironman/1077)（2017 iT 邦幫忙鐵人賽 Big Data 組冠軍）與[進擊的資料科學](https://www.datainpoint.com/data-science-in-action/)。
 
@@ -20,17 +21,16 @@ Due to resourse constraint and limited experience, we accept 5 additional regist
 
 We will use Python's `random` module to draw if there are more than 5 additional registrations within higher priorities.
 
-Auditing is welcomed, however there will be no credits, Tableau product key, homeworks, nor exams.
-
-[YouTube Playlist](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWTH1ffGy0jmoLnYhE8neJi)
+Auditing is welcomed, however there will be no credits, Tableau product key, homeworks, nor exams. We encourage auditing via course [YouTube Playlist](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWTH1ffGy0jmoLnYhE8neJi)
 
 ## Logistics
 
+- Contact me: <yaojenkuo@ntu.edu.tw>
 - Schedule: Fridays, 14:20-17:20
-- Pre-requisites: None
 - Location: 管一 405
 - CEIBA: <https://ceiba.ntu.edu.tw/1082viz_with_ds>
 - Forum: [Signup at Piazza](https://piazza.com/ntu.edu.tw/spring2020/ba4009)
+- [YouTube Playlist](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWTH1ffGy0jmoLnYhE8neJi)
 
 ## Grading Policy
 
