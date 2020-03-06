@@ -28,6 +28,7 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 - Contact me: <yaojenkuo@ntu.edu.tw>
 - Schedule: Fridays, 14:20-17:20
 - Location: 管一 405
+- [slido](https://www.sli.do/): K309 
 - CEIBA: <https://ceiba.ntu.edu.tw/1082viz_with_ds>
 - Forum: [Signup at Piazza](https://piazza.com/ntu.edu.tw/spring2020/ba4009)
 - [YouTube Playlist](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWTH1ffGy0jmoLnYhE8neJi)
