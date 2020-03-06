@@ -18,12 +18,11 @@ Due to resourse constraint and limited experience, we accept 5 additional regist
 3. 工管系大三與商研所碩一
 4. 其他
 
-We will use Python's `random` module to draw if there are more than 5 additional registrations with the highest priority.
+We will use Python's `random` module to draw if there are more than 5 additional registrations within higher priorities.
 
-Registered auditing is welcomed
+Auditing is welcomed, however there will be no credits, Tableau product key, homeworks, nor exams.
 
-- Auditor does not have credits, Tableau License Key, homeworks, nor exams
-- If there are more than 15 auditors, we will adopt the same policy as additional registration
+[YouTube Playlist](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWTH1ffGy0jmoLnYhE8neJi)
 
 ## Logistics
 
