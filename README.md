@@ -65,3 +65,8 @@ Registered auditing is welcomed
 |2020-06-19|Project: NBA Data(TBD)||
 |2020-06-26|Dragon Boat Festival||
 |2020-07-03|Final Exam|Homework 4 Due|
+
+How to transform `slides.html` to PDF format?
+- Add `?print-pdf` at the end of `slides.html` making it `slides.html?print-pdf` and press enter
+- Copy and paste the URL in your Chrome browser
+- File > Print... > Save as PDF
