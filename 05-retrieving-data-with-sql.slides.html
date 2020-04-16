@@ -13480,13 +13480,223 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[2]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Null</th>
+      <th>Key</th>
+      <th>Default</th>
+      <th>Extra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>firstName</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>lastName</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>temporaryDisplayName</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>personId</td>
+      <td>int(11)</td>
+      <td>NO</td>
+      <td>PRI</td>
+      <td>None</td>
+      <td>auto_increment</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>teamId</td>
+      <td>int(11)</td>
+      <td>YES</td>
+      <td>MUL</td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>jersey</td>
+      <td>int(11)</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>pos</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>heightFeet</td>
+      <td>int(11)</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>heightInches</td>
+      <td>int(11)</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>heightMeters</td>
+      <td>double</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>weightPounds</td>
+      <td>int(11)</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>weightKilograms</td>
+      <td>double</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>dateOfBirthUTC</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>nbaDebutYear</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>yearsPro</td>
+      <td>int(11)</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>collegeName</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>lastAffiliation</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>country</td>
+      <td>text</td>
+      <td>YES</td>
+      <td></td>
+      <td>None</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13505,13 +13715,147 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>COLUMN_NAME</th>
+      <th>DATA_TYPE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>firstName</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>lastName</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>temporaryDisplayName</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>personId</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>teamId</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>jersey</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>pos</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>heightFeet</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>heightInches</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>heightMeters</td>
+      <td>double</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>weightPounds</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>weightKilograms</td>
+      <td>double</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>dateOfBirthUTC</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>nbaDebutYear</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>yearsPro</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>collegeName</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>lastAffiliation</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>country</td>
+      <td>text</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13560,7 +13904,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_bits</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">8</span>
@@ -13568,6 +13912,24 @@ a.anchor-link {
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4294967296
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13609,13 +13971,76 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>heightMeters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1.98</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2.13</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2.06</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2.03</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2.01</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13633,13 +14058,76 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>heightMetersInt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13678,13 +14166,292 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>isNBAFranchise</th>
+      <th>isAllStar</th>
+      <th>city</th>
+      <th>altCityName</th>
+      <th>fullName</th>
+      <th>tricode</th>
+      <th>teamId</th>
+      <th>nickname</th>
+      <th>urlName</th>
+      <th>teamShortName</th>
+      <th>confName</th>
+      <th>divName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>New Orleans</td>
+      <td>New Orleans</td>
+      <td>New Orleans Pelicans</td>
+      <td>NOP</td>
+      <td>1610612740</td>
+      <td>Pelicans</td>
+      <td>pelicans</td>
+      <td>New Orleans</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Dallas</td>
+      <td>Dallas</td>
+      <td>Dallas Mavericks</td>
+      <td>DAL</td>
+      <td>1610612742</td>
+      <td>Mavericks</td>
+      <td>mavericks</td>
+      <td>Dallas</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Denver</td>
+      <td>Denver</td>
+      <td>Denver Nuggets</td>
+      <td>DEN</td>
+      <td>1610612743</td>
+      <td>Nuggets</td>
+      <td>nuggets</td>
+      <td>Denver</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Golden State</td>
+      <td>Golden State</td>
+      <td>Golden State Warriors</td>
+      <td>GSW</td>
+      <td>1610612744</td>
+      <td>Warriors</td>
+      <td>warriors</td>
+      <td>Golden State</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Houston</td>
+      <td>Houston</td>
+      <td>Houston Rockets</td>
+      <td>HOU</td>
+      <td>1610612745</td>
+      <td>Rockets</td>
+      <td>rockets</td>
+      <td>Houston</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>True</td>
+      <td>False</td>
+      <td>LA</td>
+      <td>LA Clippers</td>
+      <td>LA Clippers</td>
+      <td>LAC</td>
+      <td>1610612746</td>
+      <td>Clippers</td>
+      <td>clippers</td>
+      <td>LA Clippers</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Los Angeles</td>
+      <td>Los Angeles Lakers</td>
+      <td>Los Angeles Lakers</td>
+      <td>LAL</td>
+      <td>1610612747</td>
+      <td>Lakers</td>
+      <td>lakers</td>
+      <td>L.A. Lakers</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Minnesota</td>
+      <td>Minnesota</td>
+      <td>Minnesota Timberwolves</td>
+      <td>MIN</td>
+      <td>1610612750</td>
+      <td>Timberwolves</td>
+      <td>timberwolves</td>
+      <td>Minnesota</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Phoenix</td>
+      <td>Phoenix</td>
+      <td>Phoenix Suns</td>
+      <td>PHX</td>
+      <td>1610612756</td>
+      <td>Suns</td>
+      <td>suns</td>
+      <td>Phoenix</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Portland</td>
+      <td>Portland</td>
+      <td>Portland Trail Blazers</td>
+      <td>POR</td>
+      <td>1610612757</td>
+      <td>Trail Blazers</td>
+      <td>blazers</td>
+      <td>Portland</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Sacramento</td>
+      <td>Sacramento</td>
+      <td>Sacramento Kings</td>
+      <td>SAC</td>
+      <td>1610612758</td>
+      <td>Kings</td>
+      <td>kings</td>
+      <td>Sacramento</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>True</td>
+      <td>False</td>
+      <td>San Antonio</td>
+      <td>San Antonio</td>
+      <td>San Antonio Spurs</td>
+      <td>SAS</td>
+      <td>1610612759</td>
+      <td>Spurs</td>
+      <td>spurs</td>
+      <td>San Antonio</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Oklahoma City</td>
+      <td>Oklahoma City</td>
+      <td>Oklahoma City Thunder</td>
+      <td>OKC</td>
+      <td>1610612760</td>
+      <td>Thunder</td>
+      <td>thunder</td>
+      <td>Oklahoma City</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Utah</td>
+      <td>Utah</td>
+      <td>Utah Jazz</td>
+      <td>UTA</td>
+      <td>1610612762</td>
+      <td>Jazz</td>
+      <td>jazz</td>
+      <td>Utah</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Memphis</td>
+      <td>Memphis</td>
+      <td>Memphis Grizzlies</td>
+      <td>MEM</td>
+      <td>1610612763</td>
+      <td>Grizzlies</td>
+      <td>grizzlies</td>
+      <td>Memphis</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13702,13 +14469,292 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>isNBAFranchise</th>
+      <th>isAllStar</th>
+      <th>city</th>
+      <th>altCityName</th>
+      <th>fullName</th>
+      <th>tricode</th>
+      <th>teamId</th>
+      <th>nickname</th>
+      <th>urlName</th>
+      <th>teamShortName</th>
+      <th>confName</th>
+      <th>divName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>New Orleans</td>
+      <td>New Orleans</td>
+      <td>New Orleans Pelicans</td>
+      <td>NOP</td>
+      <td>1610612740</td>
+      <td>Pelicans</td>
+      <td>pelicans</td>
+      <td>New Orleans</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Dallas</td>
+      <td>Dallas</td>
+      <td>Dallas Mavericks</td>
+      <td>DAL</td>
+      <td>1610612742</td>
+      <td>Mavericks</td>
+      <td>mavericks</td>
+      <td>Dallas</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Denver</td>
+      <td>Denver</td>
+      <td>Denver Nuggets</td>
+      <td>DEN</td>
+      <td>1610612743</td>
+      <td>Nuggets</td>
+      <td>nuggets</td>
+      <td>Denver</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Golden State</td>
+      <td>Golden State</td>
+      <td>Golden State Warriors</td>
+      <td>GSW</td>
+      <td>1610612744</td>
+      <td>Warriors</td>
+      <td>warriors</td>
+      <td>Golden State</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Houston</td>
+      <td>Houston</td>
+      <td>Houston Rockets</td>
+      <td>HOU</td>
+      <td>1610612745</td>
+      <td>Rockets</td>
+      <td>rockets</td>
+      <td>Houston</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>True</td>
+      <td>False</td>
+      <td>LA</td>
+      <td>LA Clippers</td>
+      <td>LA Clippers</td>
+      <td>LAC</td>
+      <td>1610612746</td>
+      <td>Clippers</td>
+      <td>clippers</td>
+      <td>LA Clippers</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Los Angeles</td>
+      <td>Los Angeles Lakers</td>
+      <td>Los Angeles Lakers</td>
+      <td>LAL</td>
+      <td>1610612747</td>
+      <td>Lakers</td>
+      <td>lakers</td>
+      <td>L.A. Lakers</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Minnesota</td>
+      <td>Minnesota</td>
+      <td>Minnesota Timberwolves</td>
+      <td>MIN</td>
+      <td>1610612750</td>
+      <td>Timberwolves</td>
+      <td>timberwolves</td>
+      <td>Minnesota</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Phoenix</td>
+      <td>Phoenix</td>
+      <td>Phoenix Suns</td>
+      <td>PHX</td>
+      <td>1610612756</td>
+      <td>Suns</td>
+      <td>suns</td>
+      <td>Phoenix</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Portland</td>
+      <td>Portland</td>
+      <td>Portland Trail Blazers</td>
+      <td>POR</td>
+      <td>1610612757</td>
+      <td>Trail Blazers</td>
+      <td>blazers</td>
+      <td>Portland</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Sacramento</td>
+      <td>Sacramento</td>
+      <td>Sacramento Kings</td>
+      <td>SAC</td>
+      <td>1610612758</td>
+      <td>Kings</td>
+      <td>kings</td>
+      <td>Sacramento</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>True</td>
+      <td>False</td>
+      <td>San Antonio</td>
+      <td>San Antonio</td>
+      <td>San Antonio Spurs</td>
+      <td>SAS</td>
+      <td>1610612759</td>
+      <td>Spurs</td>
+      <td>spurs</td>
+      <td>San Antonio</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Oklahoma City</td>
+      <td>Oklahoma City</td>
+      <td>Oklahoma City Thunder</td>
+      <td>OKC</td>
+      <td>1610612760</td>
+      <td>Thunder</td>
+      <td>thunder</td>
+      <td>Oklahoma City</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Utah</td>
+      <td>Utah</td>
+      <td>Utah Jazz</td>
+      <td>UTA</td>
+      <td>1610612762</td>
+      <td>Jazz</td>
+      <td>jazz</td>
+      <td>Utah</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Memphis</td>
+      <td>Memphis</td>
+      <td>Memphis Grizzlies</td>
+      <td>MEM</td>
+      <td>1610612763</td>
+      <td>Grizzlies</td>
+      <td>grizzlies</td>
+      <td>Memphis</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13726,13 +14772,217 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>isNBAFranchise</th>
+      <th>isAllStar</th>
+      <th>city</th>
+      <th>altCityName</th>
+      <th>fullName</th>
+      <th>tricode</th>
+      <th>teamId</th>
+      <th>nickname</th>
+      <th>urlName</th>
+      <th>teamShortName</th>
+      <th>confName</th>
+      <th>divName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Boston</td>
+      <td>Boston</td>
+      <td>Boston Celtics</td>
+      <td>BOS</td>
+      <td>1610612738</td>
+      <td>Celtics</td>
+      <td>celtics</td>
+      <td>Boston</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>True</td>
+      <td>False</td>
+      <td>New Orleans</td>
+      <td>New Orleans</td>
+      <td>New Orleans Pelicans</td>
+      <td>NOP</td>
+      <td>1610612740</td>
+      <td>Pelicans</td>
+      <td>pelicans</td>
+      <td>New Orleans</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Dallas</td>
+      <td>Dallas</td>
+      <td>Dallas Mavericks</td>
+      <td>DAL</td>
+      <td>1610612742</td>
+      <td>Mavericks</td>
+      <td>mavericks</td>
+      <td>Dallas</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Houston</td>
+      <td>Houston</td>
+      <td>Houston Rockets</td>
+      <td>HOU</td>
+      <td>1610612745</td>
+      <td>Rockets</td>
+      <td>rockets</td>
+      <td>Houston</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Brooklyn</td>
+      <td>Brooklyn</td>
+      <td>Brooklyn Nets</td>
+      <td>BKN</td>
+      <td>1610612751</td>
+      <td>Nets</td>
+      <td>nets</td>
+      <td>Brooklyn</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>True</td>
+      <td>False</td>
+      <td>New York</td>
+      <td>New York</td>
+      <td>New York Knicks</td>
+      <td>NYK</td>
+      <td>1610612752</td>
+      <td>Knicks</td>
+      <td>knicks</td>
+      <td>New York</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Philadelphia</td>
+      <td>Philadelphia</td>
+      <td>Philadelphia 76ers</td>
+      <td>PHI</td>
+      <td>1610612755</td>
+      <td>76ers</td>
+      <td>sixers</td>
+      <td>Philadelphia</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>True</td>
+      <td>False</td>
+      <td>San Antonio</td>
+      <td>San Antonio</td>
+      <td>San Antonio Spurs</td>
+      <td>SAS</td>
+      <td>1610612759</td>
+      <td>Spurs</td>
+      <td>spurs</td>
+      <td>San Antonio</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Toronto</td>
+      <td>Toronto</td>
+      <td>Toronto Raptors</td>
+      <td>TOR</td>
+      <td>1610612761</td>
+      <td>Raptors</td>
+      <td>raptors</td>
+      <td>Toronto</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Memphis</td>
+      <td>Memphis</td>
+      <td>Memphis Grizzlies</td>
+      <td>MEM</td>
+      <td>1610612763</td>
+      <td>Grizzlies</td>
+      <td>grizzlies</td>
+      <td>Memphis</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13750,13 +15000,217 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>isNBAFranchise</th>
+      <th>isAllStar</th>
+      <th>city</th>
+      <th>altCityName</th>
+      <th>fullName</th>
+      <th>tricode</th>
+      <th>teamId</th>
+      <th>nickname</th>
+      <th>urlName</th>
+      <th>teamShortName</th>
+      <th>confName</th>
+      <th>divName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Boston</td>
+      <td>Boston</td>
+      <td>Boston Celtics</td>
+      <td>BOS</td>
+      <td>1610612738</td>
+      <td>Celtics</td>
+      <td>celtics</td>
+      <td>Boston</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Golden State</td>
+      <td>Golden State</td>
+      <td>Golden State Warriors</td>
+      <td>GSW</td>
+      <td>1610612744</td>
+      <td>Warriors</td>
+      <td>warriors</td>
+      <td>Golden State</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>True</td>
+      <td>False</td>
+      <td>LA</td>
+      <td>LA Clippers</td>
+      <td>LA Clippers</td>
+      <td>LAC</td>
+      <td>1610612746</td>
+      <td>Clippers</td>
+      <td>clippers</td>
+      <td>LA Clippers</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Los Angeles</td>
+      <td>Los Angeles Lakers</td>
+      <td>Los Angeles Lakers</td>
+      <td>LAL</td>
+      <td>1610612747</td>
+      <td>Lakers</td>
+      <td>lakers</td>
+      <td>L.A. Lakers</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Brooklyn</td>
+      <td>Brooklyn</td>
+      <td>Brooklyn Nets</td>
+      <td>BKN</td>
+      <td>1610612751</td>
+      <td>Nets</td>
+      <td>nets</td>
+      <td>Brooklyn</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>True</td>
+      <td>False</td>
+      <td>New York</td>
+      <td>New York</td>
+      <td>New York Knicks</td>
+      <td>NYK</td>
+      <td>1610612752</td>
+      <td>Knicks</td>
+      <td>knicks</td>
+      <td>New York</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Philadelphia</td>
+      <td>Philadelphia</td>
+      <td>Philadelphia 76ers</td>
+      <td>PHI</td>
+      <td>1610612755</td>
+      <td>76ers</td>
+      <td>sixers</td>
+      <td>Philadelphia</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Phoenix</td>
+      <td>Phoenix</td>
+      <td>Phoenix Suns</td>
+      <td>PHX</td>
+      <td>1610612756</td>
+      <td>Suns</td>
+      <td>suns</td>
+      <td>Phoenix</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Sacramento</td>
+      <td>Sacramento</td>
+      <td>Sacramento Kings</td>
+      <td>SAC</td>
+      <td>1610612758</td>
+      <td>Kings</td>
+      <td>kings</td>
+      <td>Sacramento</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>True</td>
+      <td>False</td>
+      <td>Toronto</td>
+      <td>Toronto</td>
+      <td>Toronto Raptors</td>
+      <td>TOR</td>
+      <td>1610612761</td>
+      <td>Raptors</td>
+      <td>raptors</td>
+      <td>Toronto</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13783,13 +15237,82 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>upperFirstName</th>
+      <th>upperLastName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>VINCE</td>
+      <td>CARTER</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TYSON</td>
+      <td>CHANDLER</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>LEBRON</td>
+      <td>JAMES</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CARMELO</td>
+      <td>ANTHONY</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>KYLE</td>
+      <td>KORVER</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13807,13 +15330,76 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[21]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>fullName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Vince Carter</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Tyson Chandler</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>LeBron James</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Carmelo Anthony</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Kyle Korver</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13831,13 +15417,76 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>fullName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Carter, Vince</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Chandler, Tyson</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>James, LeBron</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Anthony, Carmelo</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Korver, Kyle</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13864,13 +15513,207 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[25]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>city</th>
+      <th>lengthCity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Atlanta</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Boston</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cleveland</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>New Orleans</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Chicago</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Dallas</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Denver</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Golden State</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Houston</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>LA</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Los Angeles</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Miami</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Milwaukee</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Minnesota</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Brooklyn</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>New York</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Orlando</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Indiana</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Philadelphia</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Phoenix</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Portland</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Sacramento</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>San Antonio</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Oklahoma City</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Toronto</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Utah</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Memphis</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Washington</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Detroit</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Charlotte</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13927,13 +15770,118 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[27]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>bmi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Zion</td>
+      <td>Williamson</td>
+      <td>32.853790</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jarrell</td>
+      <td>Brantley</td>
+      <td>29.518950</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Eric</td>
+      <td>Paschall</td>
+      <td>29.512295</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Andre</td>
+      <td>Drummond</td>
+      <td>29.262204</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Deonte</td>
+      <td>Burton</td>
+      <td>29.235684</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Jusuf</td>
+      <td>Nurkic</td>
+      <td>28.984549</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>P.J.</td>
+      <td>Tucker</td>
+      <td>28.920242</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Wendell</td>
+      <td>Carter Jr.</td>
+      <td>28.867000</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Paul</td>
+      <td>Millsap</td>
+      <td>28.860672</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Donovan</td>
+      <td>Mitchell</td>
+      <td>28.487947</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13962,13 +15910,118 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[29]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>bmi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Zion</td>
+      <td>Williamson</td>
+      <td>32.853790</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jarrell</td>
+      <td>Brantley</td>
+      <td>29.518950</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Eric</td>
+      <td>Paschall</td>
+      <td>29.512295</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Andre</td>
+      <td>Drummond</td>
+      <td>29.262204</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Deonte</td>
+      <td>Burton</td>
+      <td>29.235684</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Jusuf</td>
+      <td>Nurkic</td>
+      <td>28.984549</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>P.J.</td>
+      <td>Tucker</td>
+      <td>28.920242</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Wendell</td>
+      <td>Carter Jr.</td>
+      <td>28.867000</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Paul</td>
+      <td>Millsap</td>
+      <td>28.860672</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Donovan</td>
+      <td>Mitchell</td>
+      <td>28.487947</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13989,13 +16042,118 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[31]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>bmi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Zion</td>
+      <td>Williamson</td>
+      <td>32.85</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jarrell</td>
+      <td>Brantley</td>
+      <td>29.52</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Eric</td>
+      <td>Paschall</td>
+      <td>29.51</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Andre</td>
+      <td>Drummond</td>
+      <td>29.26</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Deonte</td>
+      <td>Burton</td>
+      <td>29.24</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Jusuf</td>
+      <td>Nurkic</td>
+      <td>28.98</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>P.J.</td>
+      <td>Tucker</td>
+      <td>28.92</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Wendell</td>
+      <td>Carter Jr.</td>
+      <td>28.87</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Paul</td>
+      <td>Millsap</td>
+      <td>28.86</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Donovan</td>
+      <td>Mitchell</td>
+      <td>28.49</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14062,13 +16220,129 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[33]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>heightMeters</th>
+      <th>heightMetersSquared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Vince</td>
+      <td>Carter</td>
+      <td>1.98</td>
+      <td>3.9204</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Tyson</td>
+      <td>Chandler</td>
+      <td>2.13</td>
+      <td>4.5369</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>LeBron</td>
+      <td>James</td>
+      <td>2.06</td>
+      <td>4.2436</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Carmelo</td>
+      <td>Anthony</td>
+      <td>2.03</td>
+      <td>4.1209</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Kyle</td>
+      <td>Korver</td>
+      <td>2.01</td>
+      <td>4.0401</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Udonis</td>
+      <td>Haslem</td>
+      <td>2.03</td>
+      <td>4.1209</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Dwight</td>
+      <td>Howard</td>
+      <td>2.08</td>
+      <td>4.3264</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Andre</td>
+      <td>Iguodala</td>
+      <td>1.98</td>
+      <td>3.9204</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Trevor</td>
+      <td>Ariza</td>
+      <td>2.03</td>
+      <td>4.1209</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Marvin</td>
+      <td>Williams</td>
+      <td>2.03</td>
+      <td>4.1209</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14093,13 +16367,60 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[35]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>avgHeightMeters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1.991751</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14165,13 +16486,60 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[37]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>COUNT(*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14189,13 +16557,62 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[39]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MAX(heightMeters)</th>
+      <th>MIN(heightMeters)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>2.26</td>
+      <td>1.75</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14216,13 +16633,87 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[41]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>confName</th>
+      <th>divName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>East</td>
+      <td>Atlantic</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>East</td>
+      <td>Central</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>East</td>
+      <td>Southeast</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>West</td>
+      <td>Northwest</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>West</td>
+      <td>Pacific</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>West</td>
+      <td>Southwest</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14242,13 +16733,262 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[43]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>COUNT(*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>USA</td>
+      <td>376</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Canada</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>France</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Australia</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Croatia</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Germany</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Serbia</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Turkey</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Spain</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Latvia</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Democratic Republic of the Congo</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Brazil</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Greece</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Slovenia</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Lithuania</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Italy</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Switzerland</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Cameroon</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Ukraine</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Bahamas</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Bosnia and Herzegovina</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Japan</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Senegal</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Sudan</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>United Kingdom</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Puerto Rico</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Dominican Republic</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Montenegro</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Czech Republic</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>New Zealand</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Haiti</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>South Sudan</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Austria</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Mali</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Egypt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Finland</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Angola</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Nigeria</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Georgia</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Guinea</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Gabon</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14268,13 +17008,92 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[45]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pos</th>
+      <th>avgHeightMeters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>G</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>G-F</td>
+      <td>1.98</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>F-G</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>F</td>
+      <td>2.03</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>F-C</td>
+      <td>2.09</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>C-F</td>
+      <td>2.10</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>C</td>
+      <td>2.12</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14303,13 +17122,92 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[47]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>COUNT(*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>USA</td>
+      <td>376</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Canada</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>France</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Australia</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Croatia</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Germany</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Serbia</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14330,13 +17228,77 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[49]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pos</th>
+      <th>avgHeightMeters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>F</td>
+      <td>2.03</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>F-C</td>
+      <td>2.09</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>C-F</td>
+      <td>2.10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>C</td>
+      <td>2.12</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
