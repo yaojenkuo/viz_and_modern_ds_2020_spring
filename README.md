@@ -43,7 +43,7 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |Midterm Exam|25%|
 |Final Exam|35%|
 |[Homework 1](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/03-advanced-tableau-skills.slides.html#/5)|10%|
-|Homework 2|10%|
+|[Homework 2]()|10%|
 |Homework 3|10%|
 |Homework 4|10%|
 
@@ -58,7 +58,7 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |2020-04-03|Tomb Sweeping Day||
 |2020-04-10|[Getting Started with SQL](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/04-getting-started-with-sql.slides.html)|[Homework 1](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/03-advanced-tableau-skills.slides.html#/5) Due|
 |2020-04-17|[Retrieving Data with SQL](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/05-retrieving-data-with-sql.slides.html)||
-|2020-04-24|Advanced SQL Skills||
+|2020-04-24|[Advanced SQL Skills](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html)||
 |2020-05-01|Midterm Exam|Homework 2 Due|
 |2020-05-08|Getting Started with Python||
 |2020-05-15|Data Wrangling with Python||
