@@ -59,14 +59,14 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |2020-04-10|[Getting Started with SQL](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/04-getting-started-with-sql.slides.html)|[Homework 1](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/03-advanced-tableau-skills.slides.html#/5) Due|
 |2020-04-17|[Retrieving Data with SQL](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/05-retrieving-data-with-sql.slides.html)||
 |2020-04-24|[Advanced SQL Skills](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html)||
-|2020-05-01|Midterm Exam|[Homework 2](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html#/4) Due|
-|2020-05-08|Getting Started with Python||
+|2020-05-01|Midterm||
+|2020-05-08|Getting Started with Python|[Homework 2](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html#/4) Due|
 |2020-05-15|Data Wrangling with Python||
 |2020-05-22|Integrating Database with Python||
 |2020-05-29|Project: Gapminder Replica(TBD)|Homework 3 Due|
 |2020-06-05|Project: NBA Data(TBD)||
 |2020-06-12|Project: Taiwan 2020 Election(TBD)||
-|2020-06-19|Final Exam|Homework 4 Due|
+|2020-06-19|Final|Homework 4 Due|
 
 How to transform `slides.html` to PDF format?
 - Add `?print-pdf` at the end of `slides.html` making it `slides.html?print-pdf` and press enter
