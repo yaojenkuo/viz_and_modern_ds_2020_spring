@@ -61,7 +61,7 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |2020-04-24|[Advanced SQL Skills](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html)||
 |2020-05-01|[Midterm](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/07-midterm.slides.html)||
 |2020-05-08|[Getting Started with Python](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/08-getting-started-with-python.slides.html)|[Homework 2](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html#/4) Due|
-|2020-05-15|Data Wrangling with Python||
+|2020-05-15|[Data Wrangling with Python](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/09-data-wrangling-with-python.slides.html)||
 |2020-05-22|Integrating Database with Python||
 |2020-05-29|Project: Gapminder Replica(TBD)|Homework 3 Due|
 |2020-06-05|Project: NBA Data(TBD)||
