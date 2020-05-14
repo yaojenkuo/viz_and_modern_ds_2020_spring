@@ -14046,9 +14046,11 @@ dict_items([(&#39;isNBAFranchise&#39;, True), (&#39;isAllStar&#39;, False), (&#3
 <span class="k">elif</span> <span class="n">living_area</span> <span class="o">==</span> <span class="s2">&quot;高雄市&quot;</span><span class="p">:</span>
     <span class="n">lowest_living_cost</span> <span class="o">=</span> <span class="mi">13099</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;每人每月最低生活費為 </span><span class="si">{:,}</span><span class="s2">元&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">lowest_living_cost</span><span class="p">))</span>
-<span class="k">else</span><span class="p">:</span>
+<span class="k">elif</span> <span class="n">living_area</span> <span class="o">==</span> <span class="s2">&quot;金門縣連江縣&quot;</span><span class="p">:</span>
     <span class="n">lowest_living_cost</span> <span class="o">=</span> <span class="mi">11648</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;每人每月最低生活費為 </span><span class="si">{:,}</span><span class="s2">元&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">lowest_living_cost</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;您所輸入的居住地別我不認得。&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14098,8 +14100,11 @@ dict_items([(&#39;isNBAFranchise&#39;, True), (&#39;isAllStar&#39;, False), (&#3
     <span class="s1">&#39;金門縣連江縣&#39;</span><span class="p">:</span> <span class="mi">11648</span>
 <span class="p">}</span>
 <span class="n">living_area</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;請輸入您的居住地區別：&quot;</span><span class="p">)</span>
-<span class="n">lowest_living_cost</span> <span class="o">=</span> <span class="n">living_cost_dict</span><span class="p">[</span><span class="n">living_area</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;每人每月最低生活費為 </span><span class="si">{:,}</span><span class="s2">元&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">lowest_living_cost</span><span class="p">))</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">lowest_living_cost</span> <span class="o">=</span> <span class="n">living_cost_dict</span><span class="p">[</span><span class="n">living_area</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;每人每月最低生活費為 </span><span class="si">{:,}</span><span class="s2">元&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">lowest_living_cost</span><span class="p">))</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;您所輸入的居住地別我不認得。&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14726,7 +14731,7 @@ class range(object)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-to-adopt-while-versus-for-dealing-with-iterations?">How to adopt <code>while</code> versus <code>for</code> dealing with iterations?<a class="anchor-link" href="#How-to-adopt-while-versus-for-dealing-with-iterations?">&#182;</a></h2><ul>
+<h2 id="while-versus-for-when-dealing-with-iterations?"><code>while</code> versus <code>for</code> when dealing with iterations?<a class="anchor-link" href="#while-versus-for-when-dealing-with-iterations?">&#182;</a></h2><ul>
 <li>Use <code>for</code> to iterate over lists, dictionaries, and other iterables</li>
 <li>Use <code>while</code> if our operations involve randomness or uncertainty</li>
 </ul>
