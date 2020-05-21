@@ -15981,7 +15981,7 @@ $$\sigma = \sqrt{\frac{\sum{(x_i - \mu)^2}}{N}}$$<ul>
 <li>Expected inputs: a string indicates the city/county where the applicant lives, 3 integers indicates his house hold income per month, total saving balance, and number of household members</li>
 <li>Expected output: a string</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_bailout</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_bailout</span><span class="p">(</span><span class="n">city_county</span><span class="p">,</span> <span class="n">hh_income_per_month</span><span class="p">,</span> <span class="n">hh_saving</span><span class="p">,</span> <span class="n">n_members</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; check_bailout(&#39;臺北市&#39;, 34000, 500000, 3)</span>
 <span class="sd">    &#39;核發1萬元&#39;</span>
