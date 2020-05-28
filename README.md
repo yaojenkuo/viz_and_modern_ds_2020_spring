@@ -41,7 +41,7 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |[Homework 1](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/03-advanced-tableau-skills.slides.html#/5)|10%|
 |[Homework 2](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html#/4)|10%|
 |[Homework 3](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/10-advanced-topics-in-python.slides.html#/9)|10%|
-|[Homework 4]()|10%|
+|[Homework 4](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/11-data-wrangling-with-pandas.slides.html#/7)|10%|
 
 ## Dates and Slides
 
@@ -59,10 +59,10 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |2020-05-08|[Getting Started with Python](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/08-getting-started-with-python.slides.html)|[Homework 2](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html#/4) Due|
 |2020-05-15|[Data Wrangling with Python](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/09-data-wrangling-with-python.slides.html)||
 |2020-05-22|[Advanced Topics in Python](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/10-advanced-topics-in-python.slides.html)||
-|2020-05-29|Project: Gapminder Replica(TBD)||
+|2020-05-29|[Data Wrangling with pandas](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/11-data-wrangling-with-pandas.slides.html)||
 |2020-06-05|Project: NBA Data(TBD)|[Homework 3](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/10-advanced-topics-in-python.slides.html#/9) Due|
 |2020-06-12|Project: Taiwan 2020 Election(TBD)||
-|2020-06-19|Final|[Homework 4]() Due|
+|2020-06-19|Final|[Homework 4](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/11-data-wrangling-with-pandas.slides.html#/7) Due|
 
 How to transform `slides.html` to PDF format?
 - Add `?print-pdf` at the end of `slides.html` making it `slides.html?print-pdf` and press enter
