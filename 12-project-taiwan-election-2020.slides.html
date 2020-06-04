@@ -13212,7 +13212,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="TL;-DR">TL; DR<a class="anchor-link" href="#TL;-DR">&#182;</a></h2><blockquote><p>In this lecture, we will talk about how to make a visualization for the election data of Taiwan in 2020 with <code>pandas</code>, SQL and Tableau.</p>
+<h2 id="TL;-DR">TL; DR<a class="anchor-link" href="#TL;-DR">&#182;</a></h2><blockquote><p>In this lecture, we will talk about how to wrangle data with <code>pandas</code> and make visualizations in Tableau with the election data of Taiwan in 2020.</p>
 </blockquote>
 
 </div>
@@ -13266,7 +13266,10 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Importing-the-presidential-data-of-&#33274;&#21271;&#24066;">Importing the presidential data of &#33274;&#21271;&#24066;<a class="anchor-link" href="#Importing-the-presidential-data-of-&#33274;&#21271;&#24066;">&#182;</a></h2><p>We use <code>quote_plus</code> function from <code>urllib.parse</code> to transform file name into a URL.</p>
+<h2 id="Importing-the-presidential-data-of-&#33274;&#21271;&#24066;">Importing the presidential data of &#33274;&#21271;&#24066;<a class="anchor-link" href="#Importing-the-presidential-data-of-&#33274;&#21271;&#24066;">&#182;</a></h2><ul>
+<li>We use <code>quote_plus</code> function from <code>urllib.parse</code> to transform file name into a URL</li>
+<li>Check the list of spreadsheets before importing</li>
+</ul>
 
 </div>
 </div>
@@ -13561,56 +13564,6 @@ Shape of 臺北市第8選舉區 : (212, 20)
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">regional_legislator_taipei_city</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">sheet_name</span> <span class="ow">in</span> <span class="n">xl</span><span class="o">.</span><span class="n">sheet_names</span><span class="p">:</span>
-    <span class="n">regional_legislator_taipei_city</span><span class="p">[</span><span class="n">sheet_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">spreadsheet_url</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="n">sheet_name</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;區域立委-A05-2-得票數一覽表(臺北市).xls&quot;</span>
-<span class="n">file_url</span> <span class="o">=</span> <span class="n">quote_plus</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-<span class="n">spreadsheet_url</span> <span class="o">=</span> <span class="s2">&quot;https://taiwan-election-data.s3-ap-northeast-1.amazonaws.com/legislative_2020/</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_url</span><span class="p">)</span>
-<span class="n">xl</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="n">spreadsheet_url</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">xl</span><span class="o">.</span><span class="n">sheet_names</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;臺北市第1選舉區&#39;, &#39;臺北市第2選舉區&#39;, &#39;臺北市第3選舉區&#39;, &#39;臺北市第4選舉區&#39;, &#39;臺北市第5選舉區&#39;, &#39;臺北市第6選舉區&#39;, &#39;臺北市第7選舉區&#39;, &#39;臺北市第8選舉區&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;不分區立委-A05-6-得票數一覽表(臺北市).xls&quot;</span>
 <span class="n">file_url</span> <span class="o">=</span> <span class="n">quote_plus</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
 <span class="n">spreadsheet_url</span> <span class="o">=</span> <span class="s2">&quot;https://taiwan-election-data.s3-ap-northeast-1.amazonaws.com/legislative_2020/</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_url</span><span class="p">)</span>
@@ -13643,7 +13596,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;山地立委-A05-4-得票數一覽表(臺北市).xls&quot;</span>
@@ -13678,7 +13631,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;平地立委-A05-4-得票數一覽表(臺北市).xls&quot;</span>
@@ -13773,7 +13726,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;總統-A05-4-候選人得票數一覽表-各投開票所(臺北市).xls&quot;</span>
@@ -13789,7 +13742,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13805,7 +13758,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13950,7 +13903,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">size</span>
@@ -13969,7 +13922,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">n_candidates</span><span class="p">)</span>
@@ -14014,7 +13967,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">filled_district</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;district&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;ffill&#39;</span><span class="p">)</span>
@@ -14032,7 +13985,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -14181,7 +14134,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -14198,7 +14151,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14343,7 +14296,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;district&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
@@ -14386,7 +14339,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">office_cols</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -14408,7 +14361,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14499,7 +14452,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tidy_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -14543,7 +14496,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s2">&quot;presidential-2020/&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">i</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)]</span> <span class="c1"># to skip those hidden files</span>
@@ -14585,7 +14538,7 @@ Shape of 臺北市第8選舉區 : (212, 20)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -14649,7 +14602,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14665,7 +14618,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14755,7 +14708,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -14771,7 +14724,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14868,7 +14821,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">adjust_presidential</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -14898,7 +14851,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential</span> <span class="o">=</span> <span class="n">adjust_presidential</span><span class="p">(</span><span class="n">presidential</span><span class="p">)</span>
@@ -14912,7 +14865,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14928,7 +14881,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -15024,7 +14977,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -15040,7 +14993,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -15172,7 +15125,7 @@ Tidying 總統-A05-4-候選人得票數一覽表-各投開票所(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">regional</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -15287,10 +15240,10 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">regional</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15306,7 +15259,7 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -15409,7 +15362,7 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">adjust_legislative</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -15441,10 +15394,11 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">regional</span> <span class="o">=</span> <span class="n">adjust_legislative</span><span class="p">(</span><span class="n">regional</span><span class="p">)</span>
+<span class="n">regional</span> <span class="o">=</span> <span class="n">regional</span><span class="p">[[</span><span class="s1">&#39;city_county&#39;</span><span class="p">,</span> <span class="s1">&#39;electoral_district&#39;</span><span class="p">,</span> <span class="s1">&#39;district&#39;</span><span class="p">,</span> <span class="s1">&#39;village&#39;</span><span class="p">,</span> <span class="s1">&#39;office&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;party&#39;</span><span class="p">,</span> <span class="s1">&#39;candidate&#39;</span><span class="p">,</span> <span class="s1">&#39;votes&#39;</span><span class="p">]]</span>
 </pre></div>
 
     </div>
@@ -15454,11 +15408,10 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">regional</span> <span class="o">=</span> <span class="n">regional</span><span class="p">[[</span><span class="s1">&#39;city_county&#39;</span><span class="p">,</span> <span class="s1">&#39;electoral_district&#39;</span><span class="p">,</span> <span class="s1">&#39;district&#39;</span><span class="p">,</span> <span class="s1">&#39;village&#39;</span><span class="p">,</span> <span class="s1">&#39;office&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;party&#39;</span><span class="p">,</span> <span class="s1">&#39;candidate&#39;</span><span class="p">,</span> <span class="s1">&#39;votes&#39;</span><span class="p">]]</span>
-<span class="n">regional</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">regional</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15471,7 +15424,7 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -15566,81 +15519,8 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
       <td>黃定和</td>
       <td>129</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>97249</th>
-      <td>臺中市</td>
-      <td>臺中市第8選舉區</td>
-      <td>和平區</td>
-      <td>梨山里</td>
-      <td>1845</td>
-      <td>4</td>
-      <td>無</td>
-      <td>劉星龍</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>97250</th>
-      <td>臺中市</td>
-      <td>臺中市第8選舉區</td>
-      <td>和平區</td>
-      <td>梨山里</td>
-      <td>1846</td>
-      <td>4</td>
-      <td>無</td>
-      <td>劉星龍</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>97251</th>
-      <td>臺中市</td>
-      <td>臺中市第8選舉區</td>
-      <td>和平區</td>
-      <td>梨山里</td>
-      <td>1847</td>
-      <td>4</td>
-      <td>無</td>
-      <td>劉星龍</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>97252</th>
-      <td>臺中市</td>
-      <td>臺中市第8選舉區</td>
-      <td>和平區</td>
-      <td>平等里</td>
-      <td>1848</td>
-      <td>4</td>
-      <td>無</td>
-      <td>劉星龍</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>97253</th>
-      <td>臺中市</td>
-      <td>臺中市第8選舉區</td>
-      <td>和平區</td>
-      <td>平等里</td>
-      <td>1849</td>
-      <td>4</td>
-      <td>無</td>
-      <td>劉星龍</td>
-      <td>1</td>
-    </tr>
   </tbody>
 </table>
-<p>97254 rows × 9 columns</p>
 </div>
 </div>
 
@@ -15659,7 +15539,7 @@ Tidying 臺中市第8選舉區 of 區域立委-A05-2-得票數一覽表(臺中�
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">indigenous</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -15745,10 +15625,10 @@ Tidying 平地立委-A05-4-得票數一覽表(臺中市).xls
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">indigenous</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15764,7 +15644,7 @@ Tidying 平地立委-A05-4-得票數一覽表(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -15867,7 +15747,7 @@ Tidying 平地立委-A05-4-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">indigenous</span> <span class="o">=</span> <span class="n">adjust_legislative</span><span class="p">(</span><span class="n">indigenous</span><span class="p">)</span>
@@ -15885,7 +15765,7 @@ Tidying 平地立委-A05-4-得票數一覽表(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -16000,7 +15880,7 @@ Tidying 平地立委-A05-4-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">legislative_regional</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">regional</span><span class="p">,</span> <span class="n">indigenous</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -16021,7 +15901,7 @@ Tidying 平地立委-A05-4-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">legislative_at_large</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -16082,10 +15962,10 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">legislative_at_large</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -16101,7 +15981,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -16198,7 +16078,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">legislative_at_large</span> <span class="o">=</span> <span class="n">adjust_legislative</span><span class="p">(</span><span class="n">legislative_at_large</span><span class="p">)</span>
@@ -16216,7 +16096,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -16309,7 +16189,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16329,7 +16209,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;presidential.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -16352,7 +16232,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;tw-election-2020.db&#39;</span><span class="p">)</span>
@@ -16362,130 +16242,6 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">legislative_regional</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[42]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>city_county</th>
-      <th>electoral_district</th>
-      <th>district</th>
-      <th>village</th>
-      <th>office</th>
-      <th>number</th>
-      <th>party</th>
-      <th>candidate</th>
-      <th>votes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>宜蘭縣</td>
-      <td>宜蘭縣選舉區</td>
-      <td>宜蘭市</td>
-      <td>民族里</td>
-      <td>1</td>
-      <td>1</td>
-      <td>無</td>
-      <td>黃定和</td>
-      <td>128</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>宜蘭縣</td>
-      <td>宜蘭縣選舉區</td>
-      <td>宜蘭市</td>
-      <td>民族里</td>
-      <td>2</td>
-      <td>1</td>
-      <td>無</td>
-      <td>黃定和</td>
-      <td>138</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>宜蘭縣</td>
-      <td>宜蘭縣選舉區</td>
-      <td>宜蘭市</td>
-      <td>建軍里</td>
-      <td>3</td>
-      <td>1</td>
-      <td>無</td>
-      <td>黃定和</td>
-      <td>122</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>宜蘭縣</td>
-      <td>宜蘭縣選舉區</td>
-      <td>宜蘭市</td>
-      <td>建軍里</td>
-      <td>4</td>
-      <td>1</td>
-      <td>無</td>
-      <td>黃定和</td>
-      <td>104</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>宜蘭縣</td>
-      <td>宜蘭縣選舉區</td>
-      <td>宜蘭市</td>
-      <td>泰山里</td>
-      <td>5</td>
-      <td>1</td>
-      <td>無</td>
-      <td>黃定和</td>
-      <td>129</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -16506,7 +16262,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ttl_votes_by_candidates</span> <span class="o">=</span> <span class="n">presidential</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;city_county&#39;</span><span class="p">,</span> <span class="s1">&#39;district&#39;</span><span class="p">,</span> <span class="s1">&#39;village&#39;</span><span class="p">,</span> <span class="s1">&#39;candidate&#39;</span><span class="p">])[</span><span class="s1">&#39;votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -16531,7 +16287,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[40]:</div>
 
 
 
@@ -16634,7 +16390,7 @@ Tidying 不分區立委-A05-6-得票數一覽表(臺中市).xls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">presidential_votes_summary</span><span class="p">[</span><span class="n">presidential_votes_summary</span><span class="p">[</span><span class="s1">&#39;candidate&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;韓國瑜/張善政&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;summary_kmt.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
