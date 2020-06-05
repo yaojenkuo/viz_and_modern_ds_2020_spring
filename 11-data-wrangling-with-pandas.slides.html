@@ -13668,9 +13668,9 @@ jupyter notebook
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2020-05-26
+<pre>2020-06-03
 &lt;class &#39;datetime.date&#39;&gt;
-05-26-2020
+06-03-2020
 </pre>
 </div>
 </div>
@@ -13928,24 +13928,26 @@ jupyter notebook
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(3410, 12)
-FIPS              float64
-Admin2             object
-Province_State     object
-Country_Region     object
-Last_Update        object
-Lat               float64
-Long_             float64
-Confirmed           int64
-Deaths              int64
-Recovered           int64
-Active              int64
-Combined_Key       object
+<pre>(3644, 14)
+FIPS                   float64
+Admin2                  object
+Province_State          object
+Country_Region          object
+Last_Update             object
+Lat                    float64
+Long_                  float64
+Confirmed                int64
+Deaths                   int64
+Recovered                int64
+Active                   int64
+Combined_Key            object
+Incidence_Rate         float64
+Case-Fatality_Ratio    float64
 dtype: object
-RangeIndex(start=0, stop=3410, step=1)
+RangeIndex(start=0, stop=3644, step=1)
 Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_Region&#39;, &#39;Last_Update&#39;,
        &#39;Lat&#39;, &#39;Long_&#39;, &#39;Confirmed&#39;, &#39;Deaths&#39;, &#39;Recovered&#39;, &#39;Active&#39;,
-       &#39;Combined_Key&#39;],
+       &#39;Combined_Key&#39;, &#39;Incidence_Rate&#39;, &#39;Case-Fatality_Ratio&#39;],
       dtype=&#39;object&#39;)
 </pre>
 </div>
@@ -14030,6 +14032,8 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
@@ -14039,14 +14043,16 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <td>Abbeville</td>
       <td>South Carolina</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>34.223334</td>
       <td>-82.461707</td>
-      <td>35</td>
+      <td>46</td>
       <td>0</td>
       <td>0</td>
-      <td>35</td>
+      <td>46</td>
       <td>Abbeville, South Carolina, US</td>
+      <td>187.548416</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14054,14 +14060,16 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <td>Acadia</td>
       <td>Louisiana</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>30.295065</td>
       <td>-92.414197</td>
-      <td>395</td>
-      <td>18</td>
+      <td>446</td>
+      <td>26</td>
       <td>0</td>
-      <td>377</td>
+      <td>420</td>
       <td>Acadia, Louisiana, US</td>
+      <td>718.833105</td>
+      <td>5.829596</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14069,14 +14077,16 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <td>Accomack</td>
       <td>Virginia</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>37.767072</td>
       <td>-75.632346</td>
-      <td>758</td>
-      <td>11</td>
+      <td>953</td>
+      <td>12</td>
       <td>0</td>
-      <td>747</td>
+      <td>941</td>
       <td>Accomack, Virginia, US</td>
+      <td>2949.003590</td>
+      <td>1.259182</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14084,14 +14094,16 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <td>Ada</td>
       <td>Idaho</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>43.452658</td>
       <td>-116.241552</td>
-      <td>796</td>
-      <td>23</td>
+      <td>818</td>
+      <td>22</td>
       <td>0</td>
-      <td>773</td>
+      <td>796</td>
       <td>Ada, Idaho, US</td>
+      <td>169.855083</td>
+      <td>2.689487</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14099,14 +14111,16 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <td>Adair</td>
       <td>Iowa</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>41.330756</td>
       <td>-94.471059</td>
-      <td>7</td>
+      <td>9</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
+      <td>9</td>
       <td>Adair, Iowa, US</td>
+      <td>125.838926</td>
+      <td>0.000000</td>
     </tr>
   </tbody>
 </table>
@@ -14179,53 +14193,61 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>3407</th>
+      <th>3641</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Yemen</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>15.552727</td>
       <td>48.516388</td>
-      <td>249</td>
-      <td>49</td>
-      <td>10</td>
-      <td>190</td>
+      <td>419</td>
+      <td>95</td>
+      <td>17</td>
+      <td>307</td>
       <td>Yemen</td>
+      <td>1.404816</td>
+      <td>22.673031</td>
     </tr>
     <tr>
-      <th>3408</th>
+      <th>3642</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zambia</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-13.133897</td>
       <td>27.849332</td>
-      <td>920</td>
+      <td>1089</td>
       <td>7</td>
-      <td>336</td>
-      <td>577</td>
+      <td>912</td>
+      <td>170</td>
       <td>Zambia</td>
+      <td>5.923643</td>
+      <td>0.642792</td>
     </tr>
     <tr>
-      <th>3409</th>
+      <th>3643</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zimbabwe</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-19.015438</td>
       <td>29.154857</td>
-      <td>56</td>
+      <td>222</td>
       <td>4</td>
-      <td>25</td>
-      <td>27</td>
+      <td>29</td>
+      <td>189</td>
       <td>Zimbabwe</td>
+      <td>1.493649</td>
+      <td>1.801802</td>
     </tr>
   </tbody>
 </table>
@@ -14293,38 +14315,46 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <th>Deaths</th>
       <th>Recovered</th>
       <th>Active</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>count</th>
-      <td>3005.000000</td>
-      <td>3342.000000</td>
-      <td>3342.000000</td>
-      <td>3410.000000</td>
-      <td>3410.000000</td>
-      <td>3410.000000</td>
-      <td>3410.000000</td>
+      <td>3027.000000</td>
+      <td>3572.000000</td>
+      <td>3572.000000</td>
+      <td>3644.000000</td>
+      <td>3644.000000</td>
+      <td>3644.000000</td>
+      <td>3644.000000</td>
+      <td>3572.000000</td>
+      <td>3588.000000</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>31328.224626</td>
-      <td>36.098020</td>
-      <td>-80.494893</td>
-      <td>1639.186510</td>
-      <td>102.772141</td>
-      <td>670.661584</td>
-      <td>875.028446</td>
+      <td>31342.109349</td>
+      <td>36.063272</td>
+      <td>-73.744682</td>
+      <td>1786.123765</td>
+      <td>105.913008</td>
+      <td>769.753568</td>
+      <td>925.917673</td>
+      <td>315.666515</td>
+      <td>3.562756</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>17115.738881</td>
-      <td>11.767481</td>
-      <td>40.253824</td>
-      <td>11542.512214</td>
-      <td>1016.667267</td>
-      <td>8585.970384</td>
-      <td>10178.481945</td>
+      <td>17092.496075</td>
+      <td>12.746706</td>
+      <td>51.442183</td>
+      <td>10995.802465</td>
+      <td>1033.854829</td>
+      <td>10184.712252</td>
+      <td>11066.449947</td>
+      <td>604.770819</td>
+      <td>5.648357</td>
     </tr>
     <tr>
       <th>min</th>
@@ -14334,47 +14364,57 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>-353272.000000</td>
+      <td>-422920.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>25%</th>
-      <td>18163.000000</td>
-      <td>33.701834</td>
-      <td>-96.580090</td>
-      <td>12.000000</td>
+      <td>18168.000000</td>
+      <td>33.626796</td>
+      <td>-96.175351</td>
+      <td>15.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>10.000000</td>
+      <td>11.000000</td>
+      <td>55.761671</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>29165.000000</td>
-      <td>37.891461</td>
-      <td>-88.092471</td>
-      <td>53.000000</td>
-      <td>1.000000</td>
+      <td>29173.000000</td>
+      <td>37.958375</td>
+      <td>-87.032254</td>
+      <td>70.000000</td>
+      <td>2.000000</td>
       <td>0.000000</td>
-      <td>44.000000</td>
+      <td>53.000000</td>
+      <td>139.318587</td>
+      <td>1.818182</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>46065.000000</td>
-      <td>41.596197</td>
-      <td>-80.877666</td>
-      <td>288.750000</td>
-      <td>11.000000</td>
+      <td>46060.000000</td>
+      <td>41.915898</td>
+      <td>-78.823024</td>
+      <td>408.750000</td>
+      <td>13.000000</td>
       <td>0.000000</td>
-      <td>225.000000</td>
+      <td>290.000000</td>
+      <td>341.078436</td>
+      <td>5.263158</td>
     </tr>
     <tr>
       <th>max</th>
       <td>99999.000000</td>
       <td>71.706900</td>
       <td>178.065000</td>
-      <td>362342.000000</td>
-      <td>37048.000000</td>
-      <td>384902.000000</td>
-      <td>228179.000000</td>
+      <td>279856.000000</td>
+      <td>39728.000000</td>
+      <td>479258.000000</td>
+      <td>240128.000000</td>
+      <td>12353.775257</td>
+      <td>130.588235</td>
     </tr>
   </tbody>
 </table>
@@ -14417,24 +14457,26 @@ Index([&#39;FIPS&#39;, &#39;Admin2&#39;, &#39;Province_State&#39;, &#39;Country_
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 3410 entries, 0 to 3409
-Data columns (total 12 columns):
- #   Column          Non-Null Count  Dtype  
----  ------          --------------  -----  
- 0   FIPS            3005 non-null   float64
- 1   Admin2          3009 non-null   object 
- 2   Province_State  3232 non-null   object 
- 3   Country_Region  3410 non-null   object 
- 4   Last_Update     3410 non-null   object 
- 5   Lat             3342 non-null   float64
- 6   Long_           3342 non-null   float64
- 7   Confirmed       3410 non-null   int64  
- 8   Deaths          3410 non-null   int64  
- 9   Recovered       3410 non-null   int64  
- 10  Active          3410 non-null   int64  
- 11  Combined_Key    3410 non-null   object 
-dtypes: float64(3), int64(4), object(5)
-memory usage: 319.8+ KB
+RangeIndex: 3644 entries, 0 to 3643
+Data columns (total 14 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   FIPS                 3027 non-null   float64
+ 1   Admin2               3031 non-null   object 
+ 2   Province_State       3471 non-null   object 
+ 3   Country_Region       3644 non-null   object 
+ 4   Last_Update          3644 non-null   object 
+ 5   Lat                  3572 non-null   float64
+ 6   Long_                3572 non-null   float64
+ 7   Confirmed            3644 non-null   int64  
+ 8   Deaths               3644 non-null   int64  
+ 9   Recovered            3644 non-null   int64  
+ 10  Active               3644 non-null   int64  
+ 11  Combined_Key         3644 non-null   object 
+ 12  Incidence_Rate       3572 non-null   float64
+ 13  Case-Fatality_Ratio  3588 non-null   float64
+dtypes: float64(5), int64(4), object(5)
+memory usage: 398.7+ KB
 </pre>
 </div>
 </div>
@@ -14502,9 +14544,13 @@ memory usage: 319.8+ KB
       <th>Deaths</th>
       <th>Recovered</th>
       <th>Active</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
     <tr>
       <th>Combined_Key</th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -14525,13 +14571,15 @@ memory usage: 319.8+ KB
       <td>Abbeville</td>
       <td>South Carolina</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>34.223334</td>
       <td>-82.461707</td>
-      <td>35</td>
+      <td>46</td>
       <td>0</td>
       <td>0</td>
-      <td>35</td>
+      <td>46</td>
+      <td>187.548416</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>Acadia, Louisiana, US</th>
@@ -14539,13 +14587,15 @@ memory usage: 319.8+ KB
       <td>Acadia</td>
       <td>Louisiana</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>30.295065</td>
       <td>-92.414197</td>
-      <td>395</td>
-      <td>18</td>
+      <td>446</td>
+      <td>26</td>
       <td>0</td>
-      <td>377</td>
+      <td>420</td>
+      <td>718.833105</td>
+      <td>5.829596</td>
     </tr>
     <tr>
       <th>Accomack, Virginia, US</th>
@@ -14553,13 +14603,15 @@ memory usage: 319.8+ KB
       <td>Accomack</td>
       <td>Virginia</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>37.767072</td>
       <td>-75.632346</td>
-      <td>758</td>
-      <td>11</td>
+      <td>953</td>
+      <td>12</td>
       <td>0</td>
-      <td>747</td>
+      <td>941</td>
+      <td>2949.003590</td>
+      <td>1.259182</td>
     </tr>
     <tr>
       <th>Ada, Idaho, US</th>
@@ -14567,13 +14619,15 @@ memory usage: 319.8+ KB
       <td>Ada</td>
       <td>Idaho</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>43.452658</td>
       <td>-116.241552</td>
-      <td>796</td>
-      <td>23</td>
+      <td>818</td>
+      <td>22</td>
       <td>0</td>
-      <td>773</td>
+      <td>796</td>
+      <td>169.855083</td>
+      <td>2.689487</td>
     </tr>
     <tr>
       <th>Adair, Iowa, US</th>
@@ -14581,16 +14635,20 @@ memory usage: 319.8+ KB
       <td>Adair</td>
       <td>Iowa</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>41.330756</td>
       <td>-94.471059</td>
-      <td>7</td>
+      <td>9</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
+      <td>9</td>
+      <td>125.838926</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>...</th>
+      <td>...</td>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -14609,13 +14667,15 @@ memory usage: 319.8+ KB
       <td>NaN</td>
       <td>NaN</td>
       <td>West Bank and Gaza</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>31.952200</td>
       <td>35.233200</td>
-      <td>429</td>
+      <td>457</td>
       <td>3</td>
-      <td>365</td>
-      <td>61</td>
+      <td>372</td>
+      <td>82</td>
+      <td>8.958297</td>
+      <td>0.656455</td>
     </tr>
     <tr>
       <th>Western Sahara</th>
@@ -14623,13 +14683,15 @@ memory usage: 319.8+ KB
       <td>NaN</td>
       <td>NaN</td>
       <td>Western Sahara</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>24.215500</td>
       <td>-12.885800</td>
       <td>9</td>
       <td>1</td>
       <td>6</td>
       <td>2</td>
+      <td>1.506705</td>
+      <td>11.111111</td>
     </tr>
     <tr>
       <th>Yemen</th>
@@ -14637,13 +14699,15 @@ memory usage: 319.8+ KB
       <td>NaN</td>
       <td>NaN</td>
       <td>Yemen</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>15.552727</td>
       <td>48.516388</td>
-      <td>249</td>
-      <td>49</td>
-      <td>10</td>
-      <td>190</td>
+      <td>419</td>
+      <td>95</td>
+      <td>17</td>
+      <td>307</td>
+      <td>1.404816</td>
+      <td>22.673031</td>
     </tr>
     <tr>
       <th>Zambia</th>
@@ -14651,13 +14715,15 @@ memory usage: 319.8+ KB
       <td>NaN</td>
       <td>NaN</td>
       <td>Zambia</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-13.133897</td>
       <td>27.849332</td>
-      <td>920</td>
+      <td>1089</td>
       <td>7</td>
-      <td>336</td>
-      <td>577</td>
+      <td>912</td>
+      <td>170</td>
+      <td>5.923643</td>
+      <td>0.642792</td>
     </tr>
     <tr>
       <th>Zimbabwe</th>
@@ -14665,17 +14731,19 @@ memory usage: 319.8+ KB
       <td>NaN</td>
       <td>NaN</td>
       <td>Zimbabwe</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-19.015438</td>
       <td>29.154857</td>
-      <td>56</td>
+      <td>222</td>
       <td>4</td>
-      <td>25</td>
-      <td>27</td>
+      <td>29</td>
+      <td>189</td>
+      <td>1.493649</td>
+      <td>1.801802</td>
     </tr>
   </tbody>
 </table>
-<p>3410 rows × 11 columns</p>
+<p>3644 rows × 13 columns</p>
 </div>
 </div>
 
@@ -14745,6 +14813,8 @@ memory usage: 319.8+ KB
       <th>Deaths</th>
       <th>Recovered</th>
       <th>Active</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
@@ -14755,13 +14825,15 @@ memory usage: 319.8+ KB
       <td>Abbeville</td>
       <td>South Carolina</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>34.223334</td>
       <td>-82.461707</td>
-      <td>35</td>
+      <td>46</td>
       <td>0</td>
       <td>0</td>
-      <td>35</td>
+      <td>46</td>
+      <td>187.548416</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14770,13 +14842,15 @@ memory usage: 319.8+ KB
       <td>Acadia</td>
       <td>Louisiana</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>30.295065</td>
       <td>-92.414197</td>
-      <td>395</td>
-      <td>18</td>
+      <td>446</td>
+      <td>26</td>
       <td>0</td>
-      <td>377</td>
+      <td>420</td>
+      <td>718.833105</td>
+      <td>5.829596</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14785,13 +14859,15 @@ memory usage: 319.8+ KB
       <td>Accomack</td>
       <td>Virginia</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>37.767072</td>
       <td>-75.632346</td>
-      <td>758</td>
-      <td>11</td>
+      <td>953</td>
+      <td>12</td>
       <td>0</td>
-      <td>747</td>
+      <td>941</td>
+      <td>2949.003590</td>
+      <td>1.259182</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14800,13 +14876,15 @@ memory usage: 319.8+ KB
       <td>Ada</td>
       <td>Idaho</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>43.452658</td>
       <td>-116.241552</td>
-      <td>796</td>
-      <td>23</td>
+      <td>818</td>
+      <td>22</td>
       <td>0</td>
-      <td>773</td>
+      <td>796</td>
+      <td>169.855083</td>
+      <td>2.689487</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14815,13 +14893,15 @@ memory usage: 319.8+ KB
       <td>Adair</td>
       <td>Iowa</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>41.330756</td>
       <td>-94.471059</td>
-      <td>7</td>
+      <td>9</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
+      <td>9</td>
+      <td>125.838926</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>...</th>
@@ -14837,85 +14917,97 @@ memory usage: 319.8+ KB
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>3405</th>
+      <th>3639</th>
       <td>West Bank and Gaza</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>West Bank and Gaza</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>31.952200</td>
       <td>35.233200</td>
-      <td>429</td>
+      <td>457</td>
       <td>3</td>
-      <td>365</td>
-      <td>61</td>
+      <td>372</td>
+      <td>82</td>
+      <td>8.958297</td>
+      <td>0.656455</td>
     </tr>
     <tr>
-      <th>3406</th>
+      <th>3640</th>
       <td>Western Sahara</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Western Sahara</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>24.215500</td>
       <td>-12.885800</td>
       <td>9</td>
       <td>1</td>
       <td>6</td>
       <td>2</td>
+      <td>1.506705</td>
+      <td>11.111111</td>
     </tr>
     <tr>
-      <th>3407</th>
+      <th>3641</th>
       <td>Yemen</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Yemen</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>15.552727</td>
       <td>48.516388</td>
-      <td>249</td>
-      <td>49</td>
-      <td>10</td>
-      <td>190</td>
+      <td>419</td>
+      <td>95</td>
+      <td>17</td>
+      <td>307</td>
+      <td>1.404816</td>
+      <td>22.673031</td>
     </tr>
     <tr>
-      <th>3408</th>
+      <th>3642</th>
       <td>Zambia</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zambia</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-13.133897</td>
       <td>27.849332</td>
-      <td>920</td>
+      <td>1089</td>
       <td>7</td>
-      <td>336</td>
-      <td>577</td>
+      <td>912</td>
+      <td>170</td>
+      <td>5.923643</td>
+      <td>0.642792</td>
     </tr>
     <tr>
-      <th>3409</th>
+      <th>3643</th>
       <td>Zimbabwe</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zimbabwe</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-19.015438</td>
       <td>29.154857</td>
-      <td>56</td>
+      <td>222</td>
       <td>4</td>
-      <td>25</td>
-      <td>27</td>
+      <td>29</td>
+      <td>189</td>
+      <td>1.493649</td>
+      <td>1.801802</td>
     </tr>
   </tbody>
 </table>
-<p>3410 rows × 12 columns</p>
+<p>3644 rows × 14 columns</p>
 </div>
 </div>
 
@@ -14985,12 +15077,12 @@ memory usage: 319.8+ KB
 3                       US
 4                       US
                ...        
-3405    West Bank and Gaza
-3406        Western Sahara
-3407                 Yemen
-3408                Zambia
-3409              Zimbabwe
-Name: Country_Region, Length: 3410, dtype: object
+3639    West Bank and Gaza
+3640        Western Sahara
+3641                 Yemen
+3642                Zambia
+3643              Zimbabwe
+Name: Country_Region, Length: 3644, dtype: object
 &lt;class &#39;pandas.core.series.Series&#39;&gt;
 </pre>
 </div>
@@ -15089,28 +15181,28 @@ Name: Country_Region, Length: 3410, dtype: object
       <td>...</td>
     </tr>
     <tr>
-      <th>3405</th>
+      <th>3639</th>
       <td>West Bank and Gaza</td>
     </tr>
     <tr>
-      <th>3406</th>
+      <th>3640</th>
       <td>Western Sahara</td>
     </tr>
     <tr>
-      <th>3407</th>
+      <th>3641</th>
       <td>Yemen</td>
     </tr>
     <tr>
-      <th>3408</th>
+      <th>3642</th>
       <td>Zambia</td>
     </tr>
     <tr>
-      <th>3409</th>
+      <th>3643</th>
       <td>Zimbabwe</td>
     </tr>
   </tbody>
 </table>
-<p>3410 rows × 1 columns</p>
+<p>3644 rows × 1 columns</p>
 </div>
 </div>
 
@@ -15205,33 +15297,33 @@ Name: Country_Region, Length: 3410, dtype: object
       <td>...</td>
     </tr>
     <tr>
-      <th>3405</th>
+      <th>3639</th>
       <td>West Bank and Gaza</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>3406</th>
+      <th>3640</th>
       <td>Western Sahara</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>3407</th>
+      <th>3641</th>
       <td>Yemen</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>3408</th>
+      <th>3642</th>
       <td>Zambia</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>3409</th>
+      <th>3643</th>
       <td>Zimbabwe</td>
       <td>NaN</td>
     </tr>
   </tbody>
 </table>
-<p>3410 rows × 2 columns</p>
+<p>3644 rows × 2 columns</p>
 </div>
 </div>
 
@@ -15302,23 +15394,27 @@ Name: Country_Region, Length: 3410, dtype: object
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>3388</th>
+      <th>3623</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
     </tr>
   </tbody>
 </table>
@@ -15387,9 +15483,9 @@ Name: Country_Region, Length: 3410, dtype: object
   </thead>
   <tbody>
     <tr>
-      <th>3388</th>
+      <th>3623</th>
       <td>Taiwan*</td>
-      <td>441</td>
+      <td>443</td>
     </tr>
   </tbody>
 </table>
@@ -15443,8 +15539,8 @@ Name: Country_Region, Length: 3410, dtype: object
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Country_Region    Taiwan*
-Confirmed             441
+<pre>Country_Region    Japan
+Confirmed            76
 Name: 3388, dtype: object
 </pre>
 </div>
@@ -15482,8 +15578,8 @@ Name: 3388, dtype: object
   <tbody>
     <tr>
       <th>3388</th>
-      <td>Taiwan*</td>
-      <td>441</td>
+      <td>Japan</td>
+      <td>76</td>
     </tr>
   </tbody>
 </table>
@@ -15526,8 +15622,8 @@ Name: 3388, dtype: object
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Country_Region    Taiwan*
-Confirmed             441
+<pre>Country_Region    Japan
+Confirmed            76
 Name: 3388, dtype: object
 </pre>
 </div>
@@ -15565,8 +15661,8 @@ Name: 3388, dtype: object
   <tbody>
     <tr>
       <th>3388</th>
-      <td>Taiwan*</td>
-      <td>441</td>
+      <td>Japan</td>
+      <td>76</td>
     </tr>
   </tbody>
 </table>
@@ -15650,83 +15746,95 @@ Name: 3388, dtype: object
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>3232</th>
+      <th>3471</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Afghanistan</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>33.939110</td>
       <td>67.709953</td>
-      <td>11831</td>
-      <td>220</td>
-      <td>1128</td>
-      <td>10483</td>
+      <td>17267</td>
+      <td>294</td>
+      <td>1522</td>
+      <td>15451</td>
       <td>Afghanistan</td>
+      <td>44.355859</td>
+      <td>1.702670</td>
     </tr>
     <tr>
-      <th>3233</th>
+      <th>3472</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Albania</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>41.153300</td>
       <td>20.168300</td>
-      <td>1029</td>
+      <td>1184</td>
       <td>33</td>
-      <td>803</td>
-      <td>193</td>
+      <td>898</td>
+      <td>253</td>
       <td>Albania</td>
+      <td>41.142539</td>
+      <td>2.787162</td>
     </tr>
     <tr>
-      <th>3234</th>
+      <th>3473</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Algeria</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>28.033900</td>
       <td>1.659600</td>
-      <td>8697</td>
-      <td>617</td>
-      <td>4918</td>
-      <td>3162</td>
+      <td>9733</td>
+      <td>673</td>
+      <td>6218</td>
+      <td>2842</td>
       <td>Algeria</td>
+      <td>22.195595</td>
+      <td>6.914620</td>
     </tr>
     <tr>
-      <th>3235</th>
+      <th>3474</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Andorra</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>42.506300</td>
       <td>1.521800</td>
-      <td>763</td>
+      <td>851</td>
       <td>51</td>
-      <td>676</td>
-      <td>36</td>
+      <td>735</td>
+      <td>65</td>
       <td>Andorra</td>
+      <td>1101.404258</td>
+      <td>5.992949</td>
     </tr>
     <tr>
-      <th>3236</th>
+      <th>3475</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Angola</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-11.202700</td>
       <td>17.873900</td>
-      <td>70</td>
+      <td>86</td>
       <td>4</td>
       <td>18</td>
-      <td>48</td>
+      <td>64</td>
       <td>Angola</td>
+      <td>0.261666</td>
+      <td>4.651163</td>
     </tr>
     <tr>
       <th>...</th>
@@ -15742,29 +15850,33 @@ Name: 3388, dtype: object
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>3405</th>
+      <th>3639</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>West Bank and Gaza</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>31.952200</td>
       <td>35.233200</td>
-      <td>429</td>
+      <td>457</td>
       <td>3</td>
-      <td>365</td>
-      <td>61</td>
+      <td>372</td>
+      <td>82</td>
       <td>West Bank and Gaza</td>
+      <td>8.958297</td>
+      <td>0.656455</td>
     </tr>
     <tr>
-      <th>3406</th>
+      <th>3640</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Western Sahara</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>24.215500</td>
       <td>-12.885800</td>
       <td>9</td>
@@ -15772,55 +15884,63 @@ Name: 3388, dtype: object
       <td>6</td>
       <td>2</td>
       <td>Western Sahara</td>
+      <td>1.506705</td>
+      <td>11.111111</td>
     </tr>
     <tr>
-      <th>3407</th>
+      <th>3641</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Yemen</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>15.552727</td>
       <td>48.516388</td>
-      <td>249</td>
-      <td>49</td>
-      <td>10</td>
-      <td>190</td>
+      <td>419</td>
+      <td>95</td>
+      <td>17</td>
+      <td>307</td>
       <td>Yemen</td>
+      <td>1.404816</td>
+      <td>22.673031</td>
     </tr>
     <tr>
-      <th>3408</th>
+      <th>3642</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zambia</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-13.133897</td>
       <td>27.849332</td>
-      <td>920</td>
+      <td>1089</td>
       <td>7</td>
-      <td>336</td>
-      <td>577</td>
+      <td>912</td>
+      <td>170</td>
       <td>Zambia</td>
+      <td>5.923643</td>
+      <td>0.642792</td>
     </tr>
     <tr>
-      <th>3409</th>
+      <th>3643</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zimbabwe</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-19.015438</td>
       <td>29.154857</td>
-      <td>56</td>
+      <td>222</td>
       <td>4</td>
-      <td>25</td>
-      <td>27</td>
+      <td>29</td>
+      <td>189</td>
       <td>Zimbabwe</td>
+      <td>1.493649</td>
+      <td>1.801802</td>
     </tr>
   </tbody>
 </table>
-<p>3410 rows × 12 columns</p>
+<p>3644 rows × 14 columns</p>
 </div>
 </div>
 
@@ -15890,61 +16010,69 @@ Name: 3388, dtype: object
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>3409</th>
+      <th>3643</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zimbabwe</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-19.015438</td>
       <td>29.154857</td>
-      <td>56</td>
+      <td>222</td>
       <td>4</td>
-      <td>25</td>
-      <td>27</td>
+      <td>29</td>
+      <td>189</td>
       <td>Zimbabwe</td>
+      <td>1.493649</td>
+      <td>1.801802</td>
     </tr>
     <tr>
-      <th>3408</th>
+      <th>3642</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Zambia</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-13.133897</td>
       <td>27.849332</td>
-      <td>920</td>
+      <td>1089</td>
       <td>7</td>
-      <td>336</td>
-      <td>577</td>
+      <td>912</td>
+      <td>170</td>
       <td>Zambia</td>
+      <td>5.923643</td>
+      <td>0.642792</td>
     </tr>
     <tr>
-      <th>3407</th>
+      <th>3641</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Yemen</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>15.552727</td>
       <td>48.516388</td>
-      <td>249</td>
-      <td>49</td>
-      <td>10</td>
-      <td>190</td>
+      <td>419</td>
+      <td>95</td>
+      <td>17</td>
+      <td>307</td>
       <td>Yemen</td>
+      <td>1.404816</td>
+      <td>22.673031</td>
     </tr>
     <tr>
-      <th>3406</th>
+      <th>3640</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Western Sahara</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>24.215500</td>
       <td>-12.885800</td>
       <td>9</td>
@@ -15952,24 +16080,30 @@ Name: 3388, dtype: object
       <td>6</td>
       <td>2</td>
       <td>Western Sahara</td>
+      <td>1.506705</td>
+      <td>11.111111</td>
     </tr>
     <tr>
-      <th>3405</th>
+      <th>3639</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>West Bank and Gaza</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>31.952200</td>
       <td>35.233200</td>
-      <td>429</td>
+      <td>457</td>
       <td>3</td>
-      <td>365</td>
-      <td>61</td>
+      <td>372</td>
+      <td>82</td>
       <td>West Bank and Gaza</td>
+      <td>8.958297</td>
+      <td>0.656455</td>
     </tr>
     <tr>
       <th>...</th>
+      <td>...</td>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -15989,14 +16123,16 @@ Name: 3388, dtype: object
       <td>Adair</td>
       <td>Iowa</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>41.330756</td>
       <td>-94.471059</td>
-      <td>7</td>
+      <td>9</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
+      <td>9</td>
       <td>Adair, Iowa, US</td>
+      <td>125.838926</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>3</th>
@@ -16004,14 +16140,16 @@ Name: 3388, dtype: object
       <td>Ada</td>
       <td>Idaho</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>43.452658</td>
       <td>-116.241552</td>
-      <td>796</td>
-      <td>23</td>
+      <td>818</td>
+      <td>22</td>
       <td>0</td>
-      <td>773</td>
+      <td>796</td>
       <td>Ada, Idaho, US</td>
+      <td>169.855083</td>
+      <td>2.689487</td>
     </tr>
     <tr>
       <th>2</th>
@@ -16019,14 +16157,16 @@ Name: 3388, dtype: object
       <td>Accomack</td>
       <td>Virginia</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>37.767072</td>
       <td>-75.632346</td>
-      <td>758</td>
-      <td>11</td>
+      <td>953</td>
+      <td>12</td>
       <td>0</td>
-      <td>747</td>
+      <td>941</td>
       <td>Accomack, Virginia, US</td>
+      <td>2949.003590</td>
+      <td>1.259182</td>
     </tr>
     <tr>
       <th>1</th>
@@ -16034,14 +16174,16 @@ Name: 3388, dtype: object
       <td>Acadia</td>
       <td>Louisiana</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>30.295065</td>
       <td>-92.414197</td>
-      <td>395</td>
-      <td>18</td>
+      <td>446</td>
+      <td>26</td>
       <td>0</td>
-      <td>377</td>
+      <td>420</td>
       <td>Acadia, Louisiana, US</td>
+      <td>718.833105</td>
+      <td>5.829596</td>
     </tr>
     <tr>
       <th>0</th>
@@ -16049,18 +16191,20 @@ Name: 3388, dtype: object
       <td>Abbeville</td>
       <td>South Carolina</td>
       <td>US</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>34.223334</td>
       <td>-82.461707</td>
-      <td>35</td>
+      <td>46</td>
       <td>0</td>
       <td>0</td>
-      <td>35</td>
+      <td>46</td>
       <td>Abbeville, South Carolina, US</td>
+      <td>187.548416</td>
+      <td>0.000000</td>
     </tr>
   </tbody>
 </table>
-<p>3410 rows × 12 columns</p>
+<p>3644 rows × 14 columns</p>
 </div>
 </div>
 
@@ -16113,18 +16257,18 @@ Name: 3388, dtype: object
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0        35
-1       377
-2       747
-3       773
-4         7
+<pre>0        46
+1       420
+2       941
+3       796
+4         9
        ... 
-3405     61
-3406      2
-3407    190
-3408    577
-3409     27
-Length: 3410, dtype: int64
+3639     82
+3640      2
+3641    307
+3642    170
+3643    189
+Length: 3644, dtype: int64
 </pre>
 </div>
 </div>
@@ -16167,18 +16311,18 @@ Length: 3410, dtype: int64
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0       Less than 1000
-1       Less than 1000
-2       Less than 1000
-3       Less than 1000
-4       Less than 1000
-             ...      
-3405    Less than 1000
-3406    Less than 1000
-3407    Less than 1000
-3408    Less than 1000
-3409    Less than 1000
-Name: Confirmed, Length: 3410, dtype: category
+<pre>0               Less than 1000
+1               Less than 1000
+2               Less than 1000
+3               Less than 1000
+4               Less than 1000
+                 ...          
+3639            Less than 1000
+3640            Less than 1000
+3641            Less than 1000
+3642    Between 1000 and 10000
+3643            Less than 1000
+Name: Confirmed, Length: 3644, dtype: category
 Categories (4, object): [Less than 1000 &lt; Between 1000 and 10000 &lt; Between 10000 and 100000 &lt; Above 100000]
 </pre>
 </div>
@@ -16228,7 +16372,7 @@ Categories (4, object): [Less than 1000 &lt; Between 1000 and 10000 &lt; Between
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>3388    Taiwan
+<pre>3623    Taiwan
 Name: Country_Region, dtype: object</pre>
 </div>
 
@@ -16274,12 +16418,12 @@ Name: Country_Region, dtype: object</pre>
 3           US
 4           US
          ...  
-3405    Not US
-3406    Not US
-3407    Not US
-3408    Not US
-3409    Not US
-Name: Country_Region, Length: 3410, dtype: object</pre>
+3639    Not US
+3640    Not US
+3641    Not US
+3642    Not US
+3643    Not US
+Name: Country_Region, Length: 3644, dtype: object</pre>
 </div>
 
 </div>
@@ -16319,12 +16463,12 @@ Name: Country_Region, Length: 3410, dtype: object</pre>
 3           US
 4           US
          ...  
-3405    Not US
-3406    Not US
-3407    Not US
-3408    Not US
-3409    Not US
-Name: Country_Region, Length: 3410, dtype: object</pre>
+3639    Not US
+3640    Not US
+3641    Not US
+3642    Not US
+3643    Not US
+Name: Country_Region, Length: 3644, dtype: object</pre>
 </div>
 
 </div>
@@ -16364,7 +16508,7 @@ Name: Country_Region, Length: 3410, dtype: object</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>5589626</pre>
+<pre>6508635</pre>
 </div>
 
 </div>
@@ -16405,17 +16549,17 @@ Name: Country_Region, Length: 3410, dtype: object</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>Country_Region
-Afghanistan           11831
-Albania                1029
-Algeria                8697
-Andorra                 763
-Angola                   70
+Afghanistan           17267
+Albania                1184
+Algeria                9733
+Andorra                 851
+Angola                   86
                       ...  
-West Bank and Gaza      429
+West Bank and Gaza      457
 Western Sahara            9
-Yemen                   249
-Zambia                  920
-Zimbabwe                 56
+Yemen                   419
+Zambia                 1089
+Zimbabwe                222
 Name: Confirmed, Length: 188, dtype: int64</pre>
 </div>
 
@@ -16481,9 +16625,9 @@ Name: Confirmed, Length: 188, dtype: int64</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>3410
-178
-3232
+<pre>3644
+173
+3471
 </pre>
 </div>
 </div>
@@ -16515,19 +16659,19 @@ Name: Confirmed, Length: 188, dtype: int64</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(2944, 12)
+<pre>(2945, 14)
 0       45001.0
 1       22001.0
 2       51001.0
 3       16001.0
 4       19001.0
          ...   
-3405        0.0
-3406        0.0
-3407        0.0
-3408        0.0
-3409        0.0
-Name: FIPS, Length: 3410, dtype: float64
+3639        0.0
+3640        0.0
+3641        0.0
+3642        0.0
+3643        0.0
+Name: FIPS, Length: 3644, dtype: float64
 </pre>
 </div>
 </div>
@@ -16567,24 +16711,26 @@ Name: FIPS, Length: 3410, dtype: float64
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 3410 entries, 0 to 3409
-Data columns (total 12 columns):
- #   Column          Non-Null Count  Dtype  
----  ------          --------------  -----  
- 0   FIPS            3005 non-null   float64
- 1   Admin2          3009 non-null   object 
- 2   Province_State  3232 non-null   object 
- 3   Country_Region  3410 non-null   object 
- 4   Last_Update     3410 non-null   object 
- 5   Lat             3342 non-null   float64
- 6   Long_           3342 non-null   float64
- 7   Confirmed       3410 non-null   int64  
- 8   Deaths          3410 non-null   int64  
- 9   Recovered       3410 non-null   int64  
- 10  Active          3410 non-null   int64  
- 11  Combined_Key    3410 non-null   object 
-dtypes: float64(3), int64(4), object(5)
-memory usage: 319.8+ KB
+RangeIndex: 3644 entries, 0 to 3643
+Data columns (total 14 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   FIPS                 3027 non-null   float64
+ 1   Admin2               3031 non-null   object 
+ 2   Province_State       3471 non-null   object 
+ 3   Country_Region       3644 non-null   object 
+ 4   Last_Update          3644 non-null   object 
+ 5   Lat                  3572 non-null   float64
+ 6   Long_                3572 non-null   float64
+ 7   Confirmed            3644 non-null   int64  
+ 8   Deaths               3644 non-null   int64  
+ 9   Recovered            3644 non-null   int64  
+ 10  Active               3644 non-null   int64  
+ 11  Combined_Key         3644 non-null   object 
+ 12  Incidence_Rate       3572 non-null   float64
+ 13  Case-Fatality_Ratio  3588 non-null   float64
+dtypes: float64(5), int64(4), object(5)
+memory usage: 398.7+ KB
 </pre>
 </div>
 </div>
@@ -16626,24 +16772,26 @@ memory usage: 319.8+ KB
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 3410 entries, 0 to 3409
-Data columns (total 12 columns):
- #   Column          Non-Null Count  Dtype  
----  ------          --------------  -----  
- 0   FIPS            3005 non-null   float64
- 1   Admin2          3009 non-null   string 
- 2   Province_State  3232 non-null   string 
- 3   Country_Region  3410 non-null   string 
- 4   Last_Update     3410 non-null   string 
- 5   Lat             3342 non-null   float64
- 6   Long_           3342 non-null   float64
- 7   Confirmed       3410 non-null   int64  
- 8   Deaths          3410 non-null   int64  
- 9   Recovered       3410 non-null   int64  
- 10  Active          3410 non-null   int64  
- 11  Combined_Key    3410 non-null   string 
-dtypes: float64(3), int64(4), string(5)
-memory usage: 319.8 KB
+RangeIndex: 3644 entries, 0 to 3643
+Data columns (total 14 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   FIPS                 3027 non-null   float64
+ 1   Admin2               3031 non-null   string 
+ 2   Province_State       3471 non-null   string 
+ 3   Country_Region       3644 non-null   string 
+ 4   Last_Update          3644 non-null   string 
+ 5   Lat                  3572 non-null   float64
+ 6   Long_                3572 non-null   float64
+ 7   Confirmed            3644 non-null   int64  
+ 8   Deaths               3644 non-null   int64  
+ 9   Recovered            3644 non-null   int64  
+ 10  Active               3644 non-null   int64  
+ 11  Combined_Key         3644 non-null   string 
+ 12  Incidence_Rate       3572 non-null   float64
+ 13  Case-Fatality_Ratio  3588 non-null   float64
+dtypes: float64(5), int64(4), string(5)
+memory usage: 398.7 KB
 </pre>
 </div>
 </div>
@@ -16690,12 +16838,12 @@ memory usage: 319.8 KB
 3                      [Ada, Idaho, US]
 4                     [Adair, Iowa, US]
                      ...               
-3405               [West Bank and Gaza]
-3406                   [Western Sahara]
-3407                            [Yemen]
-3408                           [Zambia]
-3409                         [Zimbabwe]
-Name: Combined_Key, Length: 3410, dtype: object</pre>
+3639               [West Bank and Gaza]
+3640                   [Western Sahara]
+3641                            [Yemen]
+3642                           [Zambia]
+3643                         [Zimbabwe]
+Name: Combined_Key, Length: 3644, dtype: object</pre>
 </div>
 
 </div>
@@ -16796,38 +16944,38 @@ Name: Combined_Key, Length: 3410, dtype: object</pre>
       <td>...</td>
     </tr>
     <tr>
-      <th>3405</th>
+      <th>3639</th>
       <td>West Bank and Gaza</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
     </tr>
     <tr>
-      <th>3406</th>
+      <th>3640</th>
       <td>Western Sahara</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
     </tr>
     <tr>
-      <th>3407</th>
+      <th>3641</th>
       <td>Yemen</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
     </tr>
     <tr>
-      <th>3408</th>
+      <th>3642</th>
       <td>Zambia</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
     </tr>
     <tr>
-      <th>3409</th>
+      <th>3643</th>
       <td>Zimbabwe</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
     </tr>
   </tbody>
 </table>
-<p>3410 rows × 3 columns</p>
+<p>3644 rows × 3 columns</p>
 </div>
 </div>
 
@@ -16867,7 +17015,7 @@ Name: Combined_Key, Length: 3410, dtype: object</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>True
+<pre>False
 </pre>
 </div>
 </div>
@@ -16913,12 +17061,12 @@ Name: Combined_Key, Length: 3410, dtype: object</pre>
 3                      Ada;Idaho;US
 4                     Adair;Iowa;US
                    ...             
-3405             West Bank and Gaza
-3406                 Western Sahara
-3407                          Yemen
-3408                         Zambia
-3409                       Zimbabwe
-Name: Combined_Key, Length: 3410, dtype: string</pre>
+3639             West Bank and Gaza
+3640                 Western Sahara
+3641                          Yemen
+3642                         Zambia
+3643                       Zimbabwe
+Name: Combined_Key, Length: 3644, dtype: string</pre>
 </div>
 
 </div>
@@ -16999,188 +17147,214 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>3023</th>
+      <th>3060</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>Aruba</td>
       <td>Netherlands</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>12.521100</td>
       <td>-69.968300</td>
       <td>101</td>
       <td>3</td>
-      <td>95</td>
-      <td>3</td>
+      <td>98</td>
+      <td>0</td>
       <td>Aruba, Netherlands</td>
+      <td>94.599404</td>
+      <td>2.970297</td>
     </tr>
     <tr>
-      <th>3039</th>
+      <th>3082</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>Bonaire, Sint Eustatius and Saba</td>
       <td>Netherlands</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>12.178400</td>
       <td>-68.238500</td>
-      <td>6</td>
+      <td>7</td>
       <td>0</td>
-      <td>6</td>
+      <td>7</td>
       <td>0</td>
       <td>Bonaire, Sint Eustatius and Saba, Netherlands</td>
+      <td>26.696160</td>
+      <td>0.000000</td>
     </tr>
     <tr>
-      <th>3064</th>
+      <th>3130</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>Curacao</td>
       <td>Netherlands</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>12.169600</td>
       <td>-68.990000</td>
-      <td>18</td>
+      <td>21</td>
       <td>1</td>
-      <td>14</td>
-      <td>3</td>
+      <td>15</td>
+      <td>5</td>
       <td>Curacao, Netherlands</td>
+      <td>12.797075</td>
+      <td>4.761905</td>
     </tr>
     <tr>
-      <th>3199</th>
+      <th>3392</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>Sint Maarten</td>
       <td>Netherlands</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>18.042500</td>
       <td>-63.054800</td>
       <td>77</td>
       <td>15</td>
-      <td>59</td>
-      <td>3</td>
+      <td>60</td>
+      <td>2</td>
       <td>Sint Maarten, Netherlands</td>
+      <td>179.562520</td>
+      <td>19.480519</td>
     </tr>
     <tr>
-      <th>3288</th>
+      <th>3526</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Finland</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>61.924110</td>
       <td>25.748151</td>
-      <td>6628</td>
-      <td>312</td>
-      <td>5100</td>
-      <td>1216</td>
+      <td>6911</td>
+      <td>321</td>
+      <td>5500</td>
+      <td>1090</td>
       <td>Finland</td>
+      <td>124.731127</td>
+      <td>4.644769</td>
     </tr>
     <tr>
-      <th>3304</th>
+      <th>3542</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Iceland</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>64.963100</td>
       <td>-19.020800</td>
-      <td>1804</td>
+      <td>1806</td>
       <td>10</td>
-      <td>1792</td>
+      <td>1794</td>
       <td>2</td>
       <td>Iceland</td>
+      <td>529.230769</td>
+      <td>0.553710</td>
     </tr>
     <tr>
-      <th>3309</th>
+      <th>3547</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Ireland</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>53.142400</td>
       <td>-7.692100</td>
-      <td>24735</td>
-      <td>1615</td>
-      <td>21060</td>
-      <td>2060</td>
+      <td>25111</td>
+      <td>1659</td>
+      <td>22698</td>
+      <td>754</td>
       <td>Ireland</td>
+      <td>508.546728</td>
+      <td>6.606666</td>
     </tr>
     <tr>
-      <th>3346</th>
+      <th>3583</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Netherlands</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>52.132600</td>
       <td>5.291300</td>
-      <td>45578</td>
-      <td>5856</td>
+      <td>46733</td>
+      <td>5977</td>
       <td>0</td>
-      <td>39722</td>
+      <td>40756</td>
       <td>Netherlands</td>
+      <td>272.736191</td>
+      <td>12.789678</td>
     </tr>
     <tr>
-      <th>3347</th>
+      <th>3584</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>New Zealand</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>-40.900600</td>
       <td>174.886000</td>
       <td>1504</td>
-      <td>21</td>
-      <td>1462</td>
-      <td>21</td>
+      <td>22</td>
+      <td>1481</td>
+      <td>1</td>
       <td>New Zealand</td>
+      <td>31.188870</td>
+      <td>1.462766</td>
     </tr>
     <tr>
-      <th>3360</th>
+      <th>3596</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Poland</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>51.919400</td>
       <td>19.145100</td>
-      <td>22074</td>
-      <td>1024</td>
-      <td>10020</td>
-      <td>11030</td>
+      <td>24687</td>
+      <td>1115</td>
+      <td>12014</td>
+      <td>11558</td>
       <td>Poland</td>
+      <td>65.229100</td>
+      <td>4.516547</td>
     </tr>
     <tr>
-      <th>3386</th>
+      <th>3621</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Switzerland</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>46.818200</td>
       <td>8.227500</td>
-      <td>30761</td>
-      <td>1915</td>
-      <td>28200</td>
-      <td>646</td>
+      <td>30893</td>
+      <td>1921</td>
+      <td>28600</td>
+      <td>372</td>
       <td>Switzerland</td>
+      <td>356.953941</td>
+      <td>6.218237</td>
     </tr>
     <tr>
-      <th>3391</th>
+      <th>3626</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Thailand</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>15.870032</td>
       <td>100.992541</td>
-      <td>3045</td>
-      <td>57</td>
-      <td>2929</td>
-      <td>59</td>
+      <td>3084</td>
+      <td>58</td>
+      <td>2968</td>
+      <td>58</td>
       <td>Thailand</td>
+      <td>4.418340</td>
+      <td>1.880674</td>
     </tr>
   </tbody>
 </table>
@@ -17255,16 +17429,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>1/26/20</th>
       <th>1/27/20</th>
       <th>...</th>
-      <th>5/18/20</th>
-      <th>5/19/20</th>
-      <th>5/20/20</th>
-      <th>5/21/20</th>
-      <th>5/22/20</th>
-      <th>5/23/20</th>
-      <th>5/24/20</th>
-      <th>5/25/20</th>
       <th>5/26/20</th>
       <th>5/27/20</th>
+      <th>5/28/20</th>
+      <th>5/29/20</th>
+      <th>5/30/20</th>
+      <th>5/31/20</th>
+      <th>6/1/20</th>
+      <th>6/2/20</th>
+      <th>6/3/20</th>
+      <th>6/4/20</th>
     </tr>
   </thead>
   <tbody>
@@ -17281,16 +17455,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>7072</td>
-      <td>7653</td>
-      <td>8145</td>
-      <td>8676</td>
-      <td>9216</td>
-      <td>9998</td>
-      <td>10582</td>
-      <td>11173</td>
       <td>11831</td>
       <td>12456</td>
+      <td>13036</td>
+      <td>13659</td>
+      <td>14525</td>
+      <td>15205</td>
+      <td>15750</td>
+      <td>16509</td>
+      <td>17267</td>
+      <td>18054</td>
     </tr>
     <tr>
       <th>1</th>
@@ -17305,16 +17479,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>948</td>
-      <td>949</td>
-      <td>964</td>
-      <td>969</td>
-      <td>981</td>
-      <td>989</td>
-      <td>998</td>
-      <td>1004</td>
       <td>1029</td>
       <td>1050</td>
+      <td>1076</td>
+      <td>1099</td>
+      <td>1122</td>
+      <td>1137</td>
+      <td>1143</td>
+      <td>1164</td>
+      <td>1184</td>
+      <td>1197</td>
     </tr>
     <tr>
       <th>2</th>
@@ -17329,16 +17503,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>7201</td>
-      <td>7377</td>
-      <td>7542</td>
-      <td>7728</td>
-      <td>7918</td>
-      <td>8113</td>
-      <td>8306</td>
-      <td>8503</td>
       <td>8697</td>
       <td>8857</td>
+      <td>8997</td>
+      <td>9134</td>
+      <td>9267</td>
+      <td>9394</td>
+      <td>9513</td>
+      <td>9626</td>
+      <td>9733</td>
+      <td>9831</td>
     </tr>
     <tr>
       <th>3</th>
@@ -17353,16 +17527,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>761</td>
-      <td>761</td>
-      <td>762</td>
-      <td>762</td>
-      <td>762</td>
-      <td>762</td>
-      <td>762</td>
       <td>763</td>
       <td>763</td>
       <td>763</td>
+      <td>764</td>
+      <td>764</td>
+      <td>764</td>
+      <td>765</td>
+      <td>844</td>
+      <td>851</td>
+      <td>852</td>
     </tr>
     <tr>
       <th>4</th>
@@ -17377,16 +17551,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>50</td>
-      <td>52</td>
-      <td>52</td>
-      <td>58</td>
-      <td>60</td>
-      <td>61</td>
-      <td>69</td>
-      <td>70</td>
       <td>70</td>
       <td>71</td>
+      <td>74</td>
+      <td>81</td>
+      <td>84</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
     </tr>
     <tr>
       <th>...</th>
@@ -17425,16 +17599,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>246</td>
-      <td>251</td>
-      <td>251</td>
-      <td>251</td>
-      <td>251</td>
-      <td>251</td>
-      <td>251</td>
-      <td>299</td>
       <td>441</td>
       <td>443</td>
+      <td>458</td>
+      <td>463</td>
+      <td>479</td>
+      <td>483</td>
+      <td>484</td>
+      <td>484</td>
+      <td>484</td>
+      <td>485</td>
     </tr>
     <tr>
       <th>262</th>
@@ -17449,16 +17623,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>130</td>
-      <td>167</td>
-      <td>184</td>
-      <td>197</td>
-      <td>209</td>
-      <td>212</td>
-      <td>222</td>
-      <td>233</td>
       <td>249</td>
       <td>256</td>
+      <td>278</td>
+      <td>283</td>
+      <td>310</td>
+      <td>323</td>
+      <td>354</td>
+      <td>399</td>
+      <td>419</td>
+      <td>453</td>
     </tr>
     <tr>
       <th>263</th>
@@ -17473,16 +17647,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>11</td>
-      <td>11</td>
-      <td>34</td>
-      <td>34</td>
-      <td>78</td>
-      <td>78</td>
       <td>87</td>
       <td>87</td>
       <td>87</td>
       <td>87</td>
+      <td>106</td>
+      <td>106</td>
+      <td>106</td>
+      <td>132</td>
+      <td>132</td>
+      <td>132</td>
     </tr>
     <tr>
       <th>264</th>
@@ -17497,16 +17671,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>1729</td>
-      <td>1936</td>
-      <td>2140</td>
-      <td>2350</td>
-      <td>2551</td>
-      <td>2738</td>
-      <td>2929</td>
-      <td>3100</td>
       <td>3266</td>
       <td>3424</td>
+      <td>3563</td>
+      <td>3686</td>
+      <td>3807</td>
+      <td>3930</td>
+      <td>4013</td>
+      <td>4100</td>
+      <td>4191</td>
+      <td>4289</td>
     </tr>
     <tr>
       <th>265</th>
@@ -17521,20 +17695,20 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
       <td>2</td>
       <td>2</td>
       <td>2</td>
       <td>2</td>
       <td>2</td>
       <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
     </tr>
   </tbody>
 </table>
-<p>266 rows × 131 columns</p>
+<p>266 rows × 139 columns</p>
 </div>
 </div>
 
@@ -17681,53 +17855,53 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
     </tr>
     <tr>
-      <th>33777</th>
+      <th>35905</th>
       <td>NaN</td>
       <td>Sao Tome and Principe</td>
       <td>0.186360</td>
       <td>6.613081</td>
-      <td>5/27/20</td>
-      <td>443</td>
+      <td>6/4/20</td>
+      <td>485</td>
     </tr>
     <tr>
-      <th>33778</th>
+      <th>35906</th>
       <td>NaN</td>
       <td>Yemen</td>
       <td>15.552727</td>
       <td>48.516388</td>
-      <td>5/27/20</td>
-      <td>256</td>
+      <td>6/4/20</td>
+      <td>453</td>
     </tr>
     <tr>
-      <th>33779</th>
+      <th>35907</th>
       <td>NaN</td>
       <td>Comoros</td>
       <td>-11.645500</td>
       <td>43.333300</td>
-      <td>5/27/20</td>
-      <td>87</td>
+      <td>6/4/20</td>
+      <td>132</td>
     </tr>
     <tr>
-      <th>33780</th>
+      <th>35908</th>
       <td>NaN</td>
       <td>Tajikistan</td>
       <td>38.861034</td>
       <td>71.276093</td>
-      <td>5/27/20</td>
-      <td>3424</td>
+      <td>6/4/20</td>
+      <td>4289</td>
     </tr>
     <tr>
-      <th>33781</th>
+      <th>35909</th>
       <td>NaN</td>
       <td>Lesotho</td>
       <td>-29.609988</td>
       <td>28.233608</td>
-      <td>5/27/20</td>
-      <td>2</td>
+      <td>6/4/20</td>
+      <td>4</td>
     </tr>
   </tbody>
 </table>
-<p>33782 rows × 6 columns</p>
+<p>35910 rows × 6 columns</p>
 </div>
 </div>
 
@@ -17811,6 +17985,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
       <th>Province/State</th>
       <th>Country/Region</th>
       <th>Lat_y</th>
@@ -17826,14 +18002,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -17847,14 +18025,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -17868,14 +18048,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -17889,14 +18071,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -17910,14 +18094,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -17945,115 +18131,127 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>122</th>
+      <th>130</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/23/20</td>
-      <td>441</td>
+      <td>5/31/20</td>
+      <td>442</td>
     </tr>
     <tr>
-      <th>123</th>
+      <th>131</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/24/20</td>
-      <td>441</td>
+      <td>6/1/20</td>
+      <td>443</td>
     </tr>
     <tr>
-      <th>124</th>
+      <th>132</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/25/20</td>
-      <td>441</td>
+      <td>6/2/20</td>
+      <td>443</td>
     </tr>
     <tr>
-      <th>125</th>
+      <th>133</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/26/20</td>
-      <td>441</td>
+      <td>6/3/20</td>
+      <td>443</td>
     </tr>
     <tr>
-      <th>126</th>
+      <th>134</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/27/20</td>
-      <td>441</td>
+      <td>6/4/20</td>
+      <td>443</td>
     </tr>
   </tbody>
 </table>
-<p>127 rows × 18 columns</p>
+<p>135 rows × 20 columns</p>
 </div>
 </div>
 
@@ -18117,6 +18315,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
       <th>Province/State</th>
       <th>Country/Region</th>
       <th>Lat_y</th>
@@ -18130,16 +18330,18 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>0</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
+      <td>Aichi</td>
       <td>Japan</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>36.204824</td>
-      <td>138.252924</td>
-      <td>16623</td>
-      <td>846</td>
-      <td>13810</td>
-      <td>1967</td>
-      <td>Japan</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>35.035551</td>
+      <td>137.211621</td>
+      <td>508</td>
+      <td>34</td>
+      <td>458</td>
+      <td>16</td>
+      <td>Aichi, Japan</td>
+      <td>6.726482</td>
+      <td>6.692913</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -18151,85 +18353,93 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>1</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Akita</td>
+      <td>Japan</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>39.748679</td>
+      <td>140.408228</td>
+      <td>16</td>
+      <td>0</td>
+      <td>16</td>
+      <td>0</td>
+      <td>Akita, Japan</td>
+      <td>1.655475</td>
+      <td>0.000000</td>
       <td>NaN</td>
-      <td>Taiwan*</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/22/20</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>2</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Aomori</td>
+      <td>Japan</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>40.781541</td>
+      <td>140.828896</td>
+      <td>27</td>
+      <td>1</td>
+      <td>26</td>
+      <td>0</td>
+      <td>Aomori, Japan</td>
+      <td>2.166289</td>
+      <td>3.703704</td>
       <td>NaN</td>
-      <td>Taiwan*</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/23/20</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Chiba</td>
+      <td>Japan</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>35.510141</td>
+      <td>140.198917</td>
+      <td>911</td>
+      <td>45</td>
+      <td>828</td>
+      <td>38</td>
+      <td>Chiba, Japan</td>
+      <td>14.554152</td>
+      <td>4.939627</td>
       <td>NaN</td>
-      <td>Taiwan*</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/24/20</td>
-      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>4</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Ehime</td>
+      <td>Japan</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>33.624835</td>
+      <td>132.856842</td>
+      <td>82</td>
+      <td>4</td>
+      <td>59</td>
+      <td>19</td>
+      <td>Ehime, Japan</td>
+      <td>6.122990</td>
+      <td>4.878049</td>
       <td>NaN</td>
-      <td>Taiwan*</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/25/20</td>
-      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>...</th>
@@ -18251,115 +18461,127 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>123</th>
+      <th>178</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/23/20</td>
-      <td>441.0</td>
+      <td>5/31/20</td>
+      <td>442.0</td>
     </tr>
     <tr>
-      <th>124</th>
+      <th>179</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/24/20</td>
-      <td>441.0</td>
+      <td>6/1/20</td>
+      <td>443.0</td>
     </tr>
     <tr>
-      <th>125</th>
+      <th>180</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/25/20</td>
-      <td>441.0</td>
+      <td>6/2/20</td>
+      <td>443.0</td>
     </tr>
     <tr>
-      <th>126</th>
+      <th>181</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/26/20</td>
-      <td>441.0</td>
+      <td>6/3/20</td>
+      <td>443.0</td>
     </tr>
     <tr>
-      <th>127</th>
+      <th>182</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/27/20</td>
-      <td>441.0</td>
+      <td>6/4/20</td>
+      <td>443.0</td>
     </tr>
   </tbody>
 </table>
-<p>128 rows × 18 columns</p>
+<p>183 rows × 20 columns</p>
 </div>
 </div>
 
@@ -18423,6 +18645,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
       <th>Province/State</th>
       <th>Country/Region</th>
       <th>Lat_y</th>
@@ -18438,14 +18662,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -18459,14 +18685,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -18480,14 +18708,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -18501,14 +18731,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -18522,14 +18754,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
       <td>Taiwan*</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>Taiwan*</td>
       <td>23.7</td>
@@ -18557,9 +18791,11 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>249</th>
+      <th>265</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
@@ -18572,15 +18808,17 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>Korea, South</td>
       <td>36.0</td>
       <td>128.0</td>
-      <td>5/23/20</td>
-      <td>11190</td>
+      <td>5/31/20</td>
+      <td>11503</td>
     </tr>
     <tr>
-      <th>250</th>
+      <th>266</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
@@ -18593,15 +18831,17 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>Korea, South</td>
       <td>36.0</td>
       <td>128.0</td>
-      <td>5/24/20</td>
-      <td>11206</td>
+      <td>6/1/20</td>
+      <td>11541</td>
     </tr>
     <tr>
-      <th>251</th>
+      <th>267</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
@@ -18614,15 +18854,17 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>Korea, South</td>
       <td>36.0</td>
       <td>128.0</td>
-      <td>5/25/20</td>
-      <td>11225</td>
+      <td>6/2/20</td>
+      <td>11590</td>
     </tr>
     <tr>
-      <th>252</th>
+      <th>268</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
@@ -18635,15 +18877,17 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>Korea, South</td>
       <td>36.0</td>
       <td>128.0</td>
-      <td>5/26/20</td>
-      <td>11265</td>
+      <td>6/3/20</td>
+      <td>11629</td>
     </tr>
     <tr>
-      <th>253</th>
+      <th>269</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
@@ -18656,16 +18900,18 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>Korea, South</td>
       <td>36.0</td>
       <td>128.0</td>
-      <td>5/27/20</td>
-      <td>11344</td>
+      <td>6/4/20</td>
+      <td>11668</td>
     </tr>
   </tbody>
 </table>
-<p>254 rows × 18 columns</p>
+<p>270 rows × 20 columns</p>
 </div>
 </div>
 
@@ -18751,6 +18997,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
       <th>Province/State</th>
       <th>Lat_y</th>
       <th>Long</th>
@@ -18763,15 +19011,17 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Japan</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>36.204824</td>
-      <td>138.252924</td>
-      <td>16623</td>
-      <td>846</td>
-      <td>13810</td>
-      <td>1967</td>
-      <td>Japan</td>
+      <td>Aichi</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>35.035551</td>
+      <td>137.211621</td>
+      <td>508</td>
+      <td>34</td>
+      <td>458</td>
+      <td>16</td>
+      <td>Aichi, Japan</td>
+      <td>6.726482</td>
+      <td>6.692913</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -18779,80 +19029,88 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>Taiwan*</th>
+      <th>Japan</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Akita</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>39.748679</td>
+      <td>140.408228</td>
+      <td>16</td>
+      <td>0</td>
+      <td>16</td>
+      <td>0</td>
+      <td>Akita, Japan</td>
+      <td>1.655475</td>
+      <td>0.000000</td>
       <td>NaN</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/22/20</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>Taiwan*</th>
+      <th>Japan</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Aomori</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>40.781541</td>
+      <td>140.828896</td>
+      <td>27</td>
+      <td>1</td>
+      <td>26</td>
+      <td>0</td>
+      <td>Aomori, Japan</td>
+      <td>2.166289</td>
+      <td>3.703704</td>
       <td>NaN</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/23/20</td>
-      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>Taiwan*</th>
+      <th>Japan</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Chiba</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>35.510141</td>
+      <td>140.198917</td>
+      <td>911</td>
+      <td>45</td>
+      <td>828</td>
+      <td>38</td>
+      <td>Chiba, Japan</td>
+      <td>14.554152</td>
+      <td>4.939627</td>
       <td>NaN</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/24/20</td>
-      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>Taiwan*</th>
+      <th>Japan</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
-      <td>23.700000</td>
-      <td>121.000000</td>
-      <td>441</td>
-      <td>7</td>
-      <td>416</td>
-      <td>18</td>
-      <td>Taiwan*</td>
+      <td>Ehime</td>
+      <td>2020-06-04 02:33:14</td>
+      <td>33.624835</td>
+      <td>132.856842</td>
+      <td>82</td>
+      <td>4</td>
+      <td>59</td>
+      <td>19</td>
+      <td>Ehime, Japan</td>
+      <td>6.122990</td>
+      <td>4.878049</td>
       <td>NaN</td>
-      <td>23.7</td>
-      <td>121.0</td>
-      <td>1/25/20</td>
-      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>...</th>
@@ -18872,105 +19130,117 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/23/20</td>
-      <td>441.0</td>
+      <td>5/31/20</td>
+      <td>442.0</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/24/20</td>
-      <td>441.0</td>
+      <td>6/1/20</td>
+      <td>443.0</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/25/20</td>
-      <td>441.0</td>
+      <td>6/2/20</td>
+      <td>443.0</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/26/20</td>
-      <td>441.0</td>
+      <td>6/3/20</td>
+      <td>443.0</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.700000</td>
       <td>121.000000</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/27/20</td>
-      <td>441.0</td>
+      <td>6/4/20</td>
+      <td>443.0</td>
     </tr>
   </tbody>
 </table>
-<p>128 rows × 16 columns</p>
+<p>183 rows × 18 columns</p>
 </div>
 </div>
 
@@ -19033,6 +19303,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
       <th>Province/State</th>
       <th>Lat_y</th>
       <th>Long</th>
@@ -19046,14 +19318,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19065,14 +19339,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19084,14 +19360,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19103,14 +19381,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19122,14 +19402,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19154,105 +19436,117 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/23/20</td>
-      <td>441</td>
+      <td>5/31/20</td>
+      <td>442</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/24/20</td>
-      <td>441</td>
+      <td>6/1/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/25/20</td>
-      <td>441</td>
+      <td>6/2/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/26/20</td>
-      <td>441</td>
+      <td>6/3/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/27/20</td>
-      <td>441</td>
+      <td>6/4/20</td>
+      <td>443</td>
     </tr>
   </tbody>
 </table>
-<p>127 rows × 16 columns</p>
+<p>135 rows × 18 columns</p>
 </div>
 </div>
 
@@ -19315,6 +19609,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
       <th>Province/State</th>
       <th>Lat_y</th>
       <th>Long</th>
@@ -19328,14 +19624,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19347,14 +19645,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19366,14 +19666,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19385,14 +19687,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19404,14 +19708,16 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
@@ -19436,105 +19742,117 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/23/20</td>
-      <td>441</td>
+      <td>5/31/20</td>
+      <td>442</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/24/20</td>
-      <td>441</td>
+      <td>6/1/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/25/20</td>
-      <td>441</td>
+      <td>6/2/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/26/20</td>
-      <td>441</td>
+      <td>6/3/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441</td>
+      <td>443</td>
       <td>7</td>
-      <td>416</td>
-      <td>18</td>
+      <td>428</td>
+      <td>8</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/27/20</td>
-      <td>441</td>
+      <td>6/4/20</td>
+      <td>443</td>
     </tr>
   </tbody>
 </table>
-<p>127 rows × 16 columns</p>
+<p>135 rows × 18 columns</p>
 </div>
 </div>
 
@@ -19597,6 +19915,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <th>Recovered</th>
       <th>Active</th>
       <th>Combined_Key</th>
+      <th>Incidence_Rate</th>
+      <th>Case-Fatality_Ratio</th>
       <th>Province/State</th>
       <th>Lat_y</th>
       <th>Long</th>
@@ -19619,6 +19939,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>36.0</td>
       <td>128.0</td>
       <td>1/22/20</td>
@@ -19637,6 +19959,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>36.0</td>
       <td>128.0</td>
@@ -19657,6 +19981,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>36.0</td>
       <td>128.0</td>
       <td>1/24/20</td>
@@ -19676,6 +20002,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>36.0</td>
       <td>128.0</td>
       <td>1/25/20</td>
@@ -19694,6 +20022,8 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>36.0</td>
       <td>128.0</td>
@@ -19718,105 +20048,117 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/23/20</td>
-      <td>441</td>
+      <td>5/31/20</td>
+      <td>442</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/24/20</td>
-      <td>441</td>
+      <td>6/1/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/25/20</td>
-      <td>441</td>
+      <td>6/2/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/26/20</td>
-      <td>441</td>
+      <td>6/3/20</td>
+      <td>443</td>
     </tr>
     <tr>
       <th>Taiwan*</th>
       <td>NaN</td>
       <td>&lt;NA&gt;</td>
       <td>&lt;NA&gt;</td>
-      <td>2020-05-27 02:32:31</td>
+      <td>2020-06-04 02:33:14</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>441.0</td>
+      <td>443.0</td>
       <td>7.0</td>
-      <td>416.0</td>
-      <td>18.0</td>
+      <td>428.0</td>
+      <td>8.0</td>
       <td>Taiwan*</td>
+      <td>1.860034</td>
+      <td>1.580135</td>
       <td>NaN</td>
       <td>23.7</td>
       <td>121.0</td>
-      <td>5/27/20</td>
-      <td>441</td>
+      <td>6/4/20</td>
+      <td>443</td>
     </tr>
   </tbody>
 </table>
-<p>254 rows × 16 columns</p>
+<p>270 rows × 18 columns</p>
 </div>
 </div>
 
@@ -19879,10 +20221,10 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h2><p>There are 52 teams in the "Standard League" according to data.nba.net web API <a href="https://data.nba.net/prod/v2/2019/teams.json">https://data.nba.net/prod/v2/2019/teams.json</a>. Define a function named <code>create_standard_teams</code> which returns a dataframe with the shape of (52, 12).</p>
+<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h2><p>There are m teams in the "Standard League" according to data.nba.net web API <a href="https://data.nba.net/prod/v2/2019/teams.json">https://data.nba.net/prod/v2/2019/teams.json</a>. Define a function named <code>create_standard_teams</code> which returns a dataframe with the shape of (m, 12).</p>
 <ul>
 <li>Expected input: None</li>
-<li>Expected output: a (52, 12) DataFrame</li>
+<li>Expected output: a (m, 12) DataFrame</li>
 </ul>
 
 </div>
@@ -21267,10 +21609,10 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">&#182;</a></h2><p>There are 683 players in the "Standard League" according to data.nba.net web API <a href="https://data.nba.net/prod/v1/2019/players.json">https://data.nba.net/prod/v1/2019/players.json</a>. Define a function named <code>create_standard_players</code> which returns a dataframe with the shape of (683, 15).</p>
+<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">&#182;</a></h2><p>There are m players in the "Standard League" according to data.nba.net web API <a href="https://data.nba.net/prod/v1/2019/players.json">https://data.nba.net/prod/v1/2019/players.json</a>. Define a function named <code>create_standard_players</code> which returns a dataframe with the shape of (m, 15).</p>
 <ul>
 <li>Expected input: None</li>
-<li>Expected output: a (683, 15) DataFrame</li>
+<li>Expected output: a (m, 15) DataFrame</li>
 </ul>
 
 </div>
@@ -21444,7 +21786,7 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td>...</td>
     </tr>
     <tr>
-      <th>678</th>
+      <th>735</th>
       <td>Zhun</td>
       <td>Zheng</td>
       <td>64137</td>
@@ -21462,7 +21804,7 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td></td>
     </tr>
     <tr>
-      <th>679</th>
+      <th>736</th>
       <td>Kun</td>
       <td>Si</td>
       <td>64139</td>
@@ -21480,7 +21822,7 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td></td>
     </tr>
     <tr>
-      <th>680</th>
+      <th>737</th>
       <td>Ying-Chun</td>
       <td>Chen</td>
       <td>64140</td>
@@ -21498,7 +21840,7 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td></td>
     </tr>
     <tr>
-      <th>681</th>
+      <th>738</th>
       <td>Dillon</td>
       <td>Stith</td>
       <td>7020</td>
@@ -21516,7 +21858,7 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
       <td></td>
     </tr>
     <tr>
-      <th>682</th>
+      <th>739</th>
       <td>Tohi</td>
       <td>Smith-Milner</td>
       <td>7021</td>
@@ -21535,7 +21877,7 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
     </tr>
   </tbody>
 </table>
-<p>683 rows × 15 columns</p>
+<p>740 rows × 15 columns</p>
 </div>
 </div>
 
@@ -21548,10 +21890,10 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">&#182;</a></h2><p>There are 497 players belongs to NBA Franchise among the previous 683 "Standard League" players. Define a function named <code>create_nba_players</code> which returns a dataframe with the shape of (497, 15).</p>
+<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">&#182;</a></h2><p>There are m players belong to NBA Franchise among the previous "Standard League" players. Define a function named <code>create_nba_players</code> which returns a dataframe with the shape of (m, 15).</p>
 <ul>
 <li>Expected input: None</li>
-<li>Expected output: a (497, 15) DataFrame</li>
+<li>Expected output: a (m, 15) DataFrame</li>
 </ul>
 
 </div>
@@ -21829,10 +22171,10 @@ Name: Combined_Key, Length: 3410, dtype: string</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">&#182;</a></h2><p>Summarize the nationalities of the 497 active NBA players. Define a function named <code>count_nba_player_nationalities</code> which returns a dataframe with the shape of (41, 2), order by number of players with descending order and then country names with ascending order if their counts are the same.</p>
+<h2 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">&#182;</a></h2><p>Summarize the nationalities of m active NBA players. Define a function named <code>count_nba_player_nationalities</code> which returns a dataframe with the shape of (m, 2), order by number of players with descending order and then country names with ascending order if their counts are the same.</p>
 <ul>
 <li>Expected input: None</li>
-<li>Expected output: a (41, 2) DataFrame</li>
+<li>Expected output: a (m, 2) DataFrame</li>
 </ul>
 
 </div>
