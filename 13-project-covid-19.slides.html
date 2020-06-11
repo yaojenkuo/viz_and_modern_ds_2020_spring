@@ -16140,11 +16140,7 @@ Daily report for 06-10-2020 is available.
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">idVars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Province/State&#39;</span><span class="p">,</span> <span class="s1">&#39;Country/Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Lat&#39;</span><span class="p">,</span> <span class="s1">&#39;Long&#39;</span><span class="p">]</span>
-<span class="n">time_series_covid19_confirmed_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_confirmed_global</span><span class="p">,</span>
-                                                    <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span>
-                                                    <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
-                                                    <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span>
-<span class="p">)</span>
+<span class="n">time_series_covid19_confirmed_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_confirmed_global</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_confirmed_global_long</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;CaseType&#39;</span><span class="p">,</span> <span class="s1">&#39;confirmed&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_confirmed_global_long</span>
 </pre></div>
@@ -16319,11 +16315,7 @@ Daily report for 06-10-2020 is available.
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_deaths_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_deaths_global</span><span class="p">,</span>
-                                                    <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span>
-                                                    <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
-                                                    <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span>
-<span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_deaths_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_deaths_global</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_deaths_global_long</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;CaseType&#39;</span><span class="p">,</span> <span class="s1">&#39;deaths&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_deaths_global_long</span>
 </pre></div>
@@ -16498,11 +16490,7 @@ Daily report for 06-10-2020 is available.
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_recovered_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_recovered_global</span><span class="p">,</span>
-                                                    <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span>
-                                                    <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
-                                                    <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span>
-<span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_recovered_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_recovered_global</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_recovered_global_long</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;CaseType&#39;</span><span class="p">,</span> <span class="s1">&#39;recovered&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_recovered_global_long</span>
 </pre></div>
@@ -16684,9 +16672,7 @@ Daily report for 06-10-2020 is available.
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">time_series_covid19_confirmed_global_long</span><span class="p">,</span>
-                                             <span class="n">time_series_covid19_deaths_global_long</span><span class="p">,</span>
-                                             <span class="n">time_series_covid19_recovered_global_long</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">time_series_covid19_confirmed_global_long</span><span class="p">,</span> <span class="n">time_series_covid19_deaths_global_long</span><span class="p">,</span> <span class="n">time_series_covid19_recovered_global_long</span><span class="p">])</span>
 <span class="n">time_series_covid19_global_long</span> <span class="o">=</span> <span class="n">time_series_covid19_global_long</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_series_covid19_global_long</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
@@ -16713,118 +16699,6 @@ Daily report for 06-10-2020 is available.
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_global_long</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[23]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CaseType</th>
-      <th>Province/State</th>
-      <th>Country/Region</th>
-      <th>Lat</th>
-      <th>Long</th>
-      <th>Date</th>
-      <th>Case</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>110680</th>
-      <td>recovered</td>
-      <td>NaN</td>
-      <td>Sao Tome and Principe</td>
-      <td>0.186360</td>
-      <td>6.613081</td>
-      <td>6/10/20</td>
-      <td>135</td>
-    </tr>
-    <tr>
-      <th>110681</th>
-      <td>recovered</td>
-      <td>NaN</td>
-      <td>Yemen</td>
-      <td>15.552727</td>
-      <td>48.516388</td>
-      <td>6/10/20</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <th>110682</th>
-      <td>recovered</td>
-      <td>NaN</td>
-      <td>Comoros</td>
-      <td>-11.645500</td>
-      <td>43.333300</td>
-      <td>6/10/20</td>
-      <td>97</td>
-    </tr>
-    <tr>
-      <th>110683</th>
-      <td>recovered</td>
-      <td>NaN</td>
-      <td>Tajikistan</td>
-      <td>38.861034</td>
-      <td>71.276093</td>
-      <td>6/10/20</td>
-      <td>2947</td>
-    </tr>
-    <tr>
-      <th>110684</th>
-      <td>recovered</td>
-      <td>NaN</td>
-      <td>Lesotho</td>
-      <td>-29.609988</td>
-      <td>28.233608</td>
-      <td>6/10/20</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -16835,15 +16709,11 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">idVars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;UID&#39;</span><span class="p">,</span> <span class="s1">&#39;iso2&#39;</span><span class="p">,</span> <span class="s1">&#39;iso3&#39;</span><span class="p">,</span> <span class="s1">&#39;code3&#39;</span><span class="p">,</span> <span class="s1">&#39;FIPS&#39;</span><span class="p">,</span> <span class="s1">&#39;Admin2&#39;</span><span class="p">,</span> <span class="s1">&#39;Province_State&#39;</span><span class="p">,</span> <span class="s1">&#39;Country_Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Lat&#39;</span><span class="p">,</span> <span class="s1">&#39;Long_&#39;</span><span class="p">,</span> <span class="s1">&#39;Combined_Key&#39;</span><span class="p">]</span>
-<span class="n">time_series_covid19_confirmed_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_confirmed_US</span><span class="p">,</span>
-                                                <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span>
-                                                <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
-                                                <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span>
-<span class="p">)</span>
+<span class="n">time_series_covid19_confirmed_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_confirmed_US</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_confirmed_US_long</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;CaseType&#39;</span><span class="p">,</span> <span class="s1">&#39;confirmed&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_confirmed_US_long</span>
 </pre></div>
@@ -16858,7 +16728,7 @@ Daily report for 06-10-2020 is available.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -17099,16 +16969,12 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_deaths_US</span> <span class="o">=</span> <span class="n">time_series_covid19_deaths_US</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">idVars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;UID&#39;</span><span class="p">,</span> <span class="s1">&#39;iso2&#39;</span><span class="p">,</span> <span class="s1">&#39;iso3&#39;</span><span class="p">,</span> <span class="s1">&#39;code3&#39;</span><span class="p">,</span> <span class="s1">&#39;FIPS&#39;</span><span class="p">,</span> <span class="s1">&#39;Admin2&#39;</span><span class="p">,</span> <span class="s1">&#39;Province_State&#39;</span><span class="p">,</span> <span class="s1">&#39;Country_Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Lat&#39;</span><span class="p">,</span> <span class="s1">&#39;Long_&#39;</span><span class="p">,</span> <span class="s1">&#39;Combined_Key&#39;</span><span class="p">]</span>
-<span class="n">time_series_covid19_deaths_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_deaths_US</span><span class="p">,</span>
-                                             <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span>
-                                             <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
-                                             <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span>
-<span class="p">)</span>
+<span class="n">time_series_covid19_deaths_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_deaths_US</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_deaths_US_long</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;CaseType&#39;</span><span class="p">,</span> <span class="s1">&#39;deaths&#39;</span><span class="p">)</span>
 <span class="n">time_series_covid19_deaths_US_long</span>
 </pre></div>
@@ -17123,7 +16989,7 @@ Daily report for 06-10-2020 is available.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -17371,11 +17237,10 @@ Daily report for 06-10-2020 is available.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">time_series_covid19_confirmed_US_long</span><span class="p">,</span>
-                                         <span class="n">time_series_covid19_deaths_US_long</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">time_series_covid19_confirmed_US_long</span><span class="p">,</span> <span class="n">time_series_covid19_deaths_US_long</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_series_covid19_US_long</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
@@ -17411,7 +17276,7 @@ Daily report for 06-10-2020 is available.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_global_long</span> <span class="o">=</span> <span class="n">time_series_covid19_global_long</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">Date</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">Date</span><span class="p">))</span>
@@ -17432,7 +17297,7 @@ Daily report for 06-10-2020 is available.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">filled_province_state</span> <span class="o">=</span> <span class="p">[</span><span class="n">country</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">province</span><span class="p">)</span> <span class="k">else</span> <span class="n">province</span> <span class="k">for</span> <span class="n">country</span><span class="p">,</span> <span class="n">province</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">time_series_covid19_global_long</span><span class="p">[</span><span class="s1">&#39;Country/Region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">time_series_covid19_global_long</span><span class="p">[</span><span class="s1">&#39;Province/State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)]</span>
@@ -17454,7 +17319,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># global time series data</span>
@@ -17473,7 +17338,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># US time series data</span>
@@ -17499,7 +17364,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_global_long</span><span class="p">[</span><span class="n">time_series_covid19_global_long</span><span class="p">[</span><span class="s1">&#39;Country/Region&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Taiwan*&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -17515,7 +17380,7 @@ Daily report for 06-10-2020 is available.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -17617,7 +17482,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_global_long</span><span class="p">[</span><span class="n">time_series_covid19_global_long</span><span class="p">[</span><span class="s1">&#39;Country/Region&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Taiwan*&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -17633,7 +17498,7 @@ Daily report for 06-10-2020 is available.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -17735,7 +17600,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_US_long</span><span class="p">[</span><span class="n">time_series_covid19_US_long</span><span class="p">[</span><span class="s1">&#39;Admin2&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;New York&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -17751,7 +17616,7 @@ Daily report for 06-10-2020 is available.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -17895,7 +17760,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_series_covid19_US_long</span><span class="p">[</span><span class="n">time_series_covid19_US_long</span><span class="p">[</span><span class="s1">&#39;Admin2&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;New York&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -17911,7 +17776,7 @@ Daily report for 06-10-2020 is available.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -18071,7 +17936,7 @@ Daily report for 06-10-2020 is available.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_daily_report</span><span class="p">():</span>
@@ -18107,7 +17972,7 @@ Daily report for 06-10-2020 is available.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_time_series_global</span><span class="p">():</span>
@@ -18118,11 +17983,7 @@ Daily report for 06-10-2020 is available.
         <span class="n">csv_url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_</span><span class="si">{}</span><span class="s2">_global.csv&quot;</span>
         <span class="n">csv_url</span> <span class="o">=</span> <span class="n">csv_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">case_type</span><span class="p">)</span>
         <span class="n">time_series_covid19_global</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_url</span><span class="p">)</span>
-        <span class="n">time_series_covid19_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_global</span><span class="p">,</span>
-                                                  <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span>
-                                                  <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
-                                                  <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span>
-                                                 <span class="p">)</span>
+        <span class="n">time_series_covid19_global_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_global</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span><span class="p">)</span>
         <span class="n">time_series_covid19_global_long</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;CaseType&#39;</span><span class="p">,</span> <span class="n">case_type</span><span class="p">)</span>
         <span class="n">time_series_global</span> <span class="o">=</span> <span class="n">time_series_global</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time_series_covid19_global_long</span><span class="p">)</span>
     <span class="n">time_series_global</span> <span class="o">=</span> <span class="n">time_series_global</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">Date</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">Date</span><span class="p">))</span>
@@ -18152,7 +18013,7 @@ Daily report for 06-10-2020 is available.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_time_series_US</span><span class="p">():</span>
@@ -18165,11 +18026,7 @@ Daily report for 06-10-2020 is available.
         <span class="n">time_series_covid19_US</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_url</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">case_type</span> <span class="o">==</span> <span class="s1">&#39;deaths&#39;</span><span class="p">:</span>
             <span class="n">time_series_covid19_US</span> <span class="o">=</span> <span class="n">time_series_covid19_US</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">time_series_covid19_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_US</span><span class="p">,</span>
-                                              <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span>
-                                              <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
-                                              <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span>
-                                             <span class="p">)</span>
+        <span class="n">time_series_covid19_US_long</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">time_series_covid19_US</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="n">idVars</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Case&#39;</span><span class="p">)</span>
         <span class="n">time_series_covid19_US_long</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;CaseType&#39;</span><span class="p">,</span> <span class="n">case_type</span><span class="p">)</span>
         <span class="n">time_series_US</span> <span class="o">=</span> <span class="n">time_series_US</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time_series_covid19_US_long</span><span class="p">)</span>
     <span class="n">time_series_US</span> <span class="o">=</span> <span class="n">time_series_US</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">Date</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">Date</span><span class="p">))</span>
@@ -18189,7 +18046,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">daily_report</span> <span class="o">=</span> <span class="n">create_daily_report</span><span class="p">()</span>
@@ -18261,7 +18118,7 @@ Daily report for 06-10-2020 is available.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">schema_name</span> <span class="o">=</span> <span class="s1">&#39;covid19&#39;</span>
@@ -18282,6 +18139,16 @@ Daily report for 06-10-2020 is available.
 <h2 id="(Optional)-Create-a-cron-job-via-crontab">(Optional) Create a <code>cron</code> job via <code>crontab</code><a class="anchor-link" href="#(Optional)-Create-a-cron-job-via-crontab">&#182;</a></h2>
 <pre><code># run script every 3 hour on the hour
 0 0-21/3 * * * /home/ubuntu/miniconda3/envs/pyda/bin/python /home/ubuntu/jhu_covid19.py</code></pre>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="(Optional)-What-is-cron?">(Optional) What is cron?<a class="anchor-link" href="#(Optional)-What-is-cron?">&#182;</a></h2><blockquote><p>The software utility cron is a time-based job scheduler in Unix-like computer operating systems. Users that set up and maintain software environments use cron to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals. Cron is most suitable for scheduling repetitive tasks.</p>
+</blockquote>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Cron">https://en.wikipedia.org/wiki/Cron</a></p>
 
 </div>
 </div>
@@ -18359,7 +18226,7 @@ Daily report for 06-10-2020 is available.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Isn't-it-just-...!">Isn't it just ...!<a class="anchor-link" href="#Isn't-it-just-...!">&#182;</a></h2><p><img src="https://media.giphy.com/media/TerqsZEBI5RHxbABxc/giphy.gif" alt=""></p>
+<h2 id="Isn't-it-just-...">Isn't it just ...<a class="anchor-link" href="#Isn't-it-just-...">&#182;</a></h2><p><img src="https://media.giphy.com/media/TerqsZEBI5RHxbABxc/giphy.gif" alt=""></p>
 <p>Source: <a href="https://giphy.com/">https://giphy.com/</a></p>
 
 </div>
