@@ -37,7 +37,7 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |Task|Percentage|
 |----|----------|
 |[Midterm](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/07-midterm.slides.html)|25%|
-|Final|35%|
+|[Final](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/14-final.slides.html)|35%|
 |[Homework 1](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/03-advanced-tableau-skills.slides.html#/5)|10%|
 |[Homework 2](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/06-advanced-sql-skills.slides.html#/4)|10%|
 |[Homework 3](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/10-advanced-topics-in-python.slides.html#/9)|10%|
@@ -62,7 +62,7 @@ Auditing is welcomed, however there will be no credits, Tableau product key, hom
 |2020-05-29|[Data Wrangling with pandas](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/11-data-wrangling-with-pandas.slides.html)||
 |2020-06-05|[Project: Taiwan Election in 2020](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/12-project-taiwan-election-2020.slides.html)|[Homework 3](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/10-advanced-topics-in-python.slides.html#/9) Due|
 |2020-06-12|[Project: Covid-19](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/13-project-covid-19.slides.html)||
-|2020-06-19|Final|[Homework 4](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/11-data-wrangling-with-pandas.slides.html#/7) Due|
+|2020-06-19|[Final](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/14-final.slides.html)|[Homework 4](https://yaojenkuo.io/viz_and_modern_ds_2020_spring/11-data-wrangling-with-pandas.slides.html#/7) Due|
 
 How to transform `slides.html` to PDF format?
 - Add `?print-pdf` at the end of `slides.html` making it `slides.html?print-pdf` and press enter
